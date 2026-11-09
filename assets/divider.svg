@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="22" viewBox="0 0 760 22" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="glint" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF5C5C" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FF5C5C" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#FF5C5C" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="10.5" width="760" height="1" fill="#22262C"/>
+  <rect y="9.5" width="150" height="3" rx="1.5" fill="url(#glint)">
+    <animate attributeName="x" values="-150;760" dur="7.5s" repeatCount="indefinite"/>
+  </rect>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="180" viewBox="0 0 760 180" role="img" aria-labelledby="snakeTitle">
+  <title id="snakeTitle">Contribution graph — rendered nightly by GitHub Actions</title>
+  <defs>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+      .t1 { font-size: 15px; fill: #8B929C; }
+      .t2 { font-size: 12px; fill: #4E555E; letter-spacing: 0.5px; }
+    </style>
+  </defs>
+  <rect width="760" height="180" rx="14" fill="#0A0C0F"/>
+  <rect x="0.5" y="0.5" width="759" height="179" rx="13.5" fill="none" stroke="#22262C"/>
+  <text class="mono t1" x="380" y="88" text-anchor="middle">contribution graph</text>
+  <text class="mono t2" x="380" y="110" text-anchor="middle">rendered nightly · github.com/ixboss</text>
+</svg>

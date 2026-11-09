@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="236" viewBox="0 0 760 236" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">BOSS — systems-level developer. Rotating lines: "systems-level work · ACPI · EC · kexts" and "Swift · Kotlin · C++ · JS — no cloud in the middle".</title>
+  <defs>
+    <linearGradient id="hbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12151A"/>
+      <stop offset="1" stop-color="#0A0C0F"/>
+    </linearGradient>
+    <linearGradient id="hsheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.045"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="hglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FF5C5C" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#FF5C5C" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="hclip"><rect width="760" height="236" rx="18"/></clipPath>
+
+    <clipPath id="lineA">
+      <rect x="44" y="160" width="0" height="40">
+        <animate attributeName="width" values="0;0;524;524;0;0;0"
+                 keyTimes="0;0.03;0.1875;0.4125;0.45;0.5;1"
+                 dur="16s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <clipPath id="lineB">
+      <rect x="44" y="160" width="0" height="40">
+        <animate attributeName="width" values="0;0;690;690;0;0"
+                 keyTimes="0;0.53;0.6875;0.9125;0.95;1"
+                 dur="16s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .wordmark {
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 92px;
+      font-weight: 800;
+      letter-spacing: -3px;
+      fill: #F2F4F7;
+    }
+    .typed {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 23px;
+      fill: #98A0AB;
+      white-space: pre;
+    }
+    .caret { fill: #FF5C5C; }
+  </style>
+
+  <g clip-path="url(#hclip)">
+    <rect width="760" height="236" fill="url(#hbg)"/>
+    <ellipse cx="70" cy="0" rx="260" ry="190" fill="url(#hglow)"/>
+
+    <rect x="-220" y="0" width="220" height="236" fill="url(#hsheen)" transform="skewX(-16)">
+      <animateTransform attributeName="transform" type="translate" values="0 0;1180 0" dur="11s" repeatCount="indefinite" additive="sum"/>
+    </rect>
+
+    <text class="wordmark" x="44" y="120">BOSS</text>
+    <rect x="47" y="136" width="84" height="4" rx="2" fill="#FF5C5C"/>
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0;0"
+               keyTimes="0;0.03;0.045;0.4125;0.45;0.5;1" dur="16s" repeatCount="indefinite"/>
+      <g clip-path="url(#lineA)">
+        <text class="typed" x="44" y="190" textLength="524" lengthAdjust="spacing">systems-level work · ACPI · EC · kexts</text>
+      </g>
+      <rect class="caret" x="44" y="168" width="10" height="26">
+        <animate attributeName="x" values="44;44;568;568;44;44;44"
+                 keyTimes="0;0.03;0.1875;0.4125;0.45;0.5;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0"
+               keyTimes="0;0.53;0.545;0.9125;0.95;1" dur="16s" repeatCount="indefinite"/>
+      <g clip-path="url(#lineB)">
+        <text class="typed" x="44" y="190" textLength="690" lengthAdjust="spacing">Swift · Kotlin · C++ · JS — no cloud in the middle</text>
+      </g>
+      <rect class="caret" x="44" y="168" width="10" height="26">
+        <animate attributeName="x" values="44;44;734;734;44;44"
+                 keyTimes="0;0.53;0.6875;0.9125;0.95;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <g>
+      <rect x="656" y="98" width="4" height="26" rx="2" fill="#FF5C5C">
+        <animate attributeName="opacity" values="0.2;0.85;0.2" dur="2.8s" begin="0s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="672" y="106" width="4" height="18" rx="2" fill="#FF5C5C">
+        <animate attributeName="opacity" values="0.2;0.85;0.2" dur="2.8s" begin="0.4s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="688" y="102" width="4" height="22" rx="2" fill="#FF5C5C">
+        <animate attributeName="opacity" values="0.2;0.85;0.2" dur="2.8s" begin="0.8s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="704" y="110" width="4" height="14" rx="2" fill="#FF5C5C">
+        <animate attributeName="opacity" values="0.2;0.85;0.2" dur="2.8s" begin="1.2s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <rect x="0.5" y="0.5" width="759" height="235" rx="17.5" fill="none" stroke="#22262C"/>
+</svg>

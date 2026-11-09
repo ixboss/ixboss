@@ -7,12 +7,9 @@
         font-weight: 800;
         font-size: 120px;
         letter-spacing: -3px;
-        fill: #111111;
+        fill: #f0f6fc;
       }
       .caret { fill: #ff5c5c; }
-      @media (prefers-color-scheme: dark) {
-        .name { fill: #f5f5f5; }
-      }
     </style>
     <clipPath id="reveal">
       <rect x="0" y="0" height="180" width="0">
@@ -23,6 +20,8 @@
       </rect>
     </clipPath>
   </defs>
+
+  <rect width="880" height="180" rx="12" fill="#0d1117"/>
 
   <g clip-path="url(#reveal)">
     <text class="name" x="0" y="130" textLength="340" lengthAdjust="spacing">BOSS</text>

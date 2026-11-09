@@ -1,8 +1,6 @@
-# BOSS
+![BOSS](boss.svg)
 
 Just some nerd student who loves to play with everything he sees.
-
-I build on-device tools — video processing, macOS/iOS utilities, local-first infrastructure. No accounts, no telemetry, no server in the middle.
 
 ![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
@@ -18,4 +16,4 @@ I build on-device tools — video processing, macOS/iOS utilities, local-first i
 
 ## Elsewhere
 
-[Email](mailto:hossam.m.ghareeb@gmail.com) · [All repositories](https://github.com/ixboss?tab=repositories)
+[Email](mailto:hossam.m.ghareeb@gmail.com) · [TikTok](https://www.tiktok.com/@ixbossss) · [Instagram](https://www.instagram.com/ixbosss) · [All repositories](https://github.com/ixboss?tab=repositories)

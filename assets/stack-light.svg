@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 204" width="760" height="204" role="img" aria-label="Technical Stack Matrix: Languages, Systems and Firmware, Frameworks and Runtimes, Protocols and Local AI">
+  <defs>
+    <linearGradient id="bentoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Bento Cell 1: Languages (Top Left) -->
+  <g transform="translate(0, 0)">
+    <rect x="1" y="1" width="372" height="94" rx="12" fill="url(#bentoBg)" stroke="#D0D7DE" stroke-width="1.2"/>
+    <circle cx="22" cy="24" r="3" fill="#E11D48">
+      <animate attributeName="opacity" values="0.35;1;0.35" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="34" y="28" fill="#0F172A" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="11.5" font-weight="700" letter-spacing="1">01 // LANGUAGES</text>
+    <text x="354" y="28" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="10">&lt;/&gt;</text>
+
+    <g transform="translate(18, 46)" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="10.5" font-weight="600" fill="#334155">
+      <rect x="0" y="0" width="56" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="28" y="17" text-anchor="middle">Swift</text>
+      <rect x="64" y="0" width="62" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="95" y="17" text-anchor="middle">Kotlin</text>
+      <rect x="134" y="0" width="68" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="168" y="17" text-anchor="middle">C / C++</text>
+      <rect x="210" y="0" width="82" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="251" y="17" text-anchor="middle">JavaScript</text>
+      <rect x="300" y="0" width="54" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="327" y="17" text-anchor="middle">Shell</text>
+    </g>
+  </g>
+
+  <!-- Bento Cell 2: Systems & Firmware (Top Right) -->
+  <g transform="translate(386, 0)">
+    <rect x="1" y="1" width="372" height="94" rx="12" fill="url(#bentoBg)" stroke="#D0D7DE" stroke-width="1.2"/>
+    <circle cx="22" cy="24" r="3" fill="#FF7849">
+      <animate attributeName="opacity" values="0.35;1;0.35" dur="3.2s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="34" y="28" fill="#0F172A" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="11.5" font-weight="700" letter-spacing="1">02 // SYSTEMS &amp; FIRMWARE</text>
+    <text x="354" y="28" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="10">RING-0</text>
+
+    <g transform="translate(18, 46)" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="10.5" font-weight="600" fill="#334155">
+      <rect x="0" y="0" width="90" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="45" y="17" text-anchor="middle">IOKit Kexts</text>
+      <rect x="98" y="0" width="86" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="141" y="17" text-anchor="middle">ACPI / WMI</text>
+      <rect x="192" y="0" width="88" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="236" y="17" text-anchor="middle">EC Registers</text>
+      <rect x="288" y="0" width="66" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="321" y="17" text-anchor="middle">OpenCore</text>
+    </g>
+  </g>
+
+  <!-- Bento Cell 3: Frameworks & Runtimes (Bottom Left) -->
+  <g transform="translate(0, 108)">
+    <rect x="1" y="1" width="372" height="94" rx="12" fill="url(#bentoBg)" stroke="#D0D7DE" stroke-width="1.2"/>
+    <circle cx="22" cy="24" r="3" fill="#0284C7">
+      <animate attributeName="opacity" values="0.35;1;0.35" dur="3.2s" begin="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="34" y="28" fill="#0F172A" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="11.5" font-weight="700" letter-spacing="1">03 // RUNTIMES &amp; PLATFORMS</text>
+    <text x="354" y="28" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="10">NATIVE</text>
+
+    <g transform="translate(18, 46)" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="10.5" font-weight="600" fill="#334155">
+      <rect x="0" y="0" width="68" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="34" y="17" text-anchor="middle">SwiftUI</text>
+      <rect x="76" y="0" width="68" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="110" y="17" text-anchor="middle">Node.js</text>
+      <rect x="152" y="0" width="68" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="186" y="17" text-anchor="middle">Android</text>
+      <rect x="228" y="0" width="76" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="266" y="17" text-anchor="middle">Capacitor</text>
+      <rect x="312" y="0" width="42" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="333" y="17" text-anchor="middle">PWA</text>
+    </g>
+  </g>
+
+  <!-- Bento Cell 4: Protocols & Local AI (Bottom Right) -->
+  <g transform="translate(386, 108)">
+    <rect x="1" y="1" width="372" height="94" rx="12" fill="url(#bentoBg)" stroke="#D0D7DE" stroke-width="1.2"/>
+    <circle cx="22" cy="24" r="3" fill="#059669">
+      <animate attributeName="opacity" values="0.35;1;0.35" dur="3.2s" begin="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="34" y="28" fill="#0F172A" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="11.5" font-weight="700" letter-spacing="1">04 // PROTOCOLS &amp; LOCAL AI</text>
+    <text x="354" y="28" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="10">P2P / LAN</text>
+
+    <g transform="translate(18, 46)" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="10.5" font-weight="600" fill="#334155">
+      <rect x="0" y="0" width="116" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="58" y="17" text-anchor="middle">DeepSeek Harness</text>
+      <rect x="124" y="0" width="74" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="161" y="17" text-anchor="middle">JSON-RPC</text>
+      <rect x="206" y="0" width="56" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="234" y="17" text-anchor="middle">mDNS</text>
+      <rect x="270" y="0" width="84" height="26" rx="6" fill="#0F172A" stroke="#334155"/><text x="312" y="17" text-anchor="middle">Ed25519 TLS</text>
+    </g>
+  </g>
+</svg>

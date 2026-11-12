@@ -1,86 +1,95 @@
 <p align="center">
-  <img src="assets/hero.svg" alt="BOSS — systems-level developer. Rotating lines: systems-level work with ACPI and Embedded Controller, then Swift, Kotlin, C++ and JavaScript with no cloud in the middle." width="760">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
+    <img src="assets/hero.svg" alt="BOSS — Just some nerd student who loves to play with everything he sees." width="760">
+  </picture>
 </p>
 
 <p align="center">
-  <sub>Just some nerd student who loves to play with everything he sees.</sub>
+  <a href="mailto:hossam.m.ghareeb@gmail.com"><img src="assets/badges/email.svg" alt="Email" height="38"></a>&nbsp;
+  <a href="https://www.tiktok.com/@ixbossss"><img src="assets/badges/tiktok.svg" alt="TikTok @ixbossss" height="38"></a>&nbsp;
+  <a href="https://www.instagram.com/ixbosss"><img src="assets/badges/instagram.svg" alt="Instagram @ixbosss" height="38"></a>&nbsp;
+  <a href="https://github.com/ixboss?tab=repositories"><img src="assets/badges/repositories.svg" alt="Repositories" height="38"></a>
 </p>
 
 <p align="center">
-  <a href="mailto:hossam.m.ghareeb@gmail.com">Email</a> ·
-  <a href="https://www.tiktok.com/@ixbossss">TikTok</a> ·
-  <a href="https://www.instagram.com/ixbosss">Instagram</a> ·
-  <a href="https://github.com/ixboss?tab=repositories">Repositories</a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/divider.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg">
+    <img src="assets/divider.svg" alt="" width="760">
+  </picture>
 </p>
 
-Most of what I build sits one layer below the app: system-level tooling that talks to laptop firmware and Embedded Controllers, an AI runtime that boots from a USB stick and follows you onto an Android phone, and cross-platform apps for macOS, Android and the web.
-
-<img src="assets/divider.svg" alt="" width="760">
-
-## Selected work
-
-<img src="assets/projects/asus-control-macos.svg" alt="asus-control-macos" width="760">
-
-A native macOS control suite for ASUS ROG and TUF gaming laptops, written in SwiftUI with a kernel extension that bridges user space to the machine's ACPI/WMI interface and Embedded Controller. An open-source answer to Armoury Crate and G-Helper.
-
-- **Battery charge limits** at 60, 80 or 100 %, written through the ASUS ACPI interface.
-- **Silent, Balanced and Turbo** firmware profiles, plus explicit PL1/PL2 CPU power limits on Alder Lake.
-- **Eight-point fan curves** read and programmed into EC registers, with hardware guardrails.
-
-Built with Swift and SwiftUI, backed by an IOKit kernel extension and a little C++ at the ACPI boundary.
-
-Verified on a TUF Gaming F17 (FX707ZM) under Ventura, Sonoma and Sequoia. Known limit: keyboard RGB stays unlit under macOS on TUF models, while battery, fan and thermal control still work.
-
-[**Repository →**](https://github.com/ixboss/asus-control-macos) · [**Release →**](https://github.com/ixboss/asus-control-macos/releases)
-
-<img src="assets/projects/universal-harness.svg" alt="universal-harness" width="760">
-
-A portable runtime that makes DeepSeek Harness run anywhere — a USB stick, a desktop, an Android phone — and be driven from another machine over the LAN, with no cloud in the middle.
-
-- **Truly portable** — bundled Node runtime, relative paths only, exFAT-safe; the folder moves between machines with its sessions intact.
-- **Node-authoritative sessions** — a task keeps running when the controller disconnects, and missed events replay on reconnect.
-- **LAN-first pairing** — mDNS discovery, QR pairing, TLS with pinned certificates and an Ed25519 challenge-response.
-
-Built with Kotlin on the Android node, Node.js for the portable core, and C where it meets the platform.
-
-Status, honestly: phases 0 through 3C are implemented and verified on Windows x64 and on a physical Android device. Linux and macOS are still untested, and synchronization, updates and terminal execution remain out of scope.
-
-[**Repository →**](https://github.com/ixboss/universal-harness)
-
-<img src="assets/projects/sadaqa-jaria.svg" alt="sadaqa-jaria" width="760">
-
-A free Quran app that works offline: a 604-page Mushaf, tafsir, five reciters, khatmah tracking and daily adhkar. No account, no ads, no tracking — everything you do stays on your device.
-
-- **Reads offline** — service-worker precache, plus a one-tap download of the full Quran into IndexedDB.
-- **Mushaf mode** — 604 pages with a finger-driven 3D page turn, or continuous scroll.
-- **Khatmah tracker** — daily portion plan, a personal intention, and the history of completed khatmahs.
-
-Built with vanilla JavaScript, a service worker and Capacitor for the app wrappers — no framework, no bundler, no build step. Offered as sadaqah jariyah.
-
-[**Open the app →**](https://ixboss.github.io/sadaqa-jaria/) · [**Repository →**](https://github.com/ixboss/sadaqa-jaria)
-
-<img src="assets/divider.svg" alt="" width="760">
-
-## Stack
+## Selected Work
 
 <p align="center">
-  <img src="assets/stack.svg" alt="Icons for five stack categories: Languages, Platforms, Frameworks, Systems, AI and tooling" width="470">
+  <a href="https://github.com/ixboss/asus-control-macos">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/projects/asus-control-macos.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/projects/asus-control-macos-light.svg">
+      <img src="assets/projects/asus-control-macos.svg" alt="01 — asus-control-macos" width="760">
+    </picture>
+  </a>
 </p>
 
-- **Languages** — Swift · Kotlin · JavaScript · C / C++ · Python
-- **Platforms** — macOS · Android · Windows · Linux
-- **Frameworks & runtimes** — SwiftUI · Node.js · Capacitor · Flutter
-- **Systems** — IOKit kernel extensions · ACPI / Embedded Controller · CMake
-- **AI & tooling** — DeepSeek Harness · JSON-RPC adapters · LAN protocols
+> **Hardware-level control suite for ASUS ROG & TUF laptops on macOS** — communicates with `ATKD.WMNB` ACPI methods and `EC0` registers through `AsusBridge.kext` to program 8-point fan curves, battery charge limits (`60%` / `80%` / `100%`), thermal profiles, and Alder Lake `PL1`/`PL2` power limits.
+>
+> <a href="https://github.com/ixboss/asus-control-macos/stargazers"><img src="https://img.shields.io/github/stars/ixboss/asus-control-macos?style=flat-square&logo=github&label=Stars&color=FF5252&labelColor=0D1117" alt="Stars"></a>
+> <a href="https://github.com/ixboss/asus-control-macos/releases"><img src="https://img.shields.io/github/v/release/ixboss/asus-control-macos?include_prereleases&style=flat-square&label=Release&color=10B981&labelColor=0D1117" alt="Release"></a>
+> <a href="https://github.com/ixboss/asus-control-macos"><img src="https://img.shields.io/github/languages/top/ixboss/asus-control-macos?style=flat-square&color=38BDF8&labelColor=0D1117" alt="Top Language"></a>
+> &nbsp;·&nbsp; [**Repository →**](https://github.com/ixboss/asus-control-macos) · [**Latest Release →**](https://github.com/ixboss/asus-control-macos/releases)
 
-<img src="assets/divider.svg" alt="" width="760">
+<br>
 
-## Activity
+<p align="center">
+  <a href="https://github.com/ixboss/universal-harness">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/projects/universal-harness.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/projects/universal-harness-light.svg">
+      <img src="assets/projects/universal-harness.svg" alt="02 — universal-harness" width="760">
+    </picture>
+  </a>
+</p>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/snake/snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/snake/snake-light.svg">
-  <img alt="Animated contribution graph, where a snake moves across the contribution cells" src="assets/snake/snake-light.svg" width="760">
-</picture>
+> **Portable zero-cloud runtime for DeepSeek Harness** — runs directly from an exFAT USB stick, desktop, or Android node and pairs over local LAN via mDNS, QR bootstrap, pinned TLS 1.3 certificates, and `Ed25519` challenge-response with automatic session event replay.
+>
+> <a href="https://github.com/ixboss/universal-harness/stargazers"><img src="https://img.shields.io/github/stars/ixboss/universal-harness?style=flat-square&logo=github&label=Stars&color=38BDF8&labelColor=0D1117" alt="Stars"></a>
+> <a href="https://github.com/ixboss/universal-harness"><img src="https://img.shields.io/github/languages/top/ixboss/universal-harness?style=flat-square&color=10B981&labelColor=0D1117" alt="Top Language"></a>
+> &nbsp;·&nbsp; [**Repository →**](https://github.com/ixboss/universal-harness)
 
-173 contributions in the last year across four public repositories — as of November 2026.
+<br>
+
+<p align="center">
+  <a href="https://ixboss.github.io/sadaqa-jaria/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/projects/sadaqa-jaria.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/projects/sadaqa-jaria-light.svg">
+      <img src="assets/projects/sadaqa-jaria.svg" alt="03 — sadaqa-jaria" width="760">
+    </picture>
+  </a>
+</p>
+
+> **Offline-first Quran web & mobile application (Sadaqah Jariyah)** — full 604-page Mushaf with 3D page-turn & continuous scroll, tafsir, 5 audio reciters, khatmah planner, and daily adhkar cached locally in `IndexedDB` with zero tracking or ads.
+>
+> <a href="https://github.com/ixboss/sadaqa-jaria/stargazers"><img src="https://img.shields.io/github/stars/ixboss/sadaqa-jaria?style=flat-square&logo=github&label=Stars&color=10B981&labelColor=0D1117" alt="Stars"></a>
+> <a href="https://ixboss.github.io/sadaqa-jaria/"><img src="https://img.shields.io/badge/PWA-100%25_Offline-10B981?style=flat-square&labelColor=0D1117" alt="Offline PWA"></a>
+> &nbsp;·&nbsp; [**Launch Web App →**](https://ixboss.github.io/sadaqa-jaria/) · [**Repository →**](https://github.com/ixboss/sadaqa-jaria)
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/divider.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg">
+    <img src="assets/divider.svg" alt="" width="760">
+  </picture>
+</p>
+
+## Stack & Architecture
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/stack.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg">
+    <img src="assets/stack.svg" alt="Stack & Architecture Matrix" width="760">
+  </picture>
+</p>

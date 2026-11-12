@@ -1,106 +1,127 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="236" viewBox="0 0 760 236" role="img" aria-labelledby="heroTitle">
-  <title id="heroTitle">BOSS — systems-level developer. Rotating lines: "systems-level work · ACPI · EC · kexts" and "Swift · Kotlin · C++ · JS — no cloud in the middle".</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 218" width="760" height="218" role="img" aria-label="BOSS — Just some nerd student who loves to play with everything he sees.">
   <defs>
-    <linearGradient id="hbg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#12151A"/>
-      <stop offset="1" stop-color="#0A0C0F"/>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#11151C"/>
+      <stop offset="55%" stop-color="#0B0E13"/>
+      <stop offset="100%" stop-color="#080A0E"/>
     </linearGradient>
-    <linearGradient id="hsheen" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.045"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="hglow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#FF5C5C" stop-opacity="0.14"/>
-      <stop offset="1" stop-color="#FF5C5C" stop-opacity="0"/>
+    <radialGradient id="crimsonGlow" cx="14%" cy="18%" r="58%">
+      <stop offset="0%" stop-color="#FF5252" stop-opacity="0.18"/>
+      <stop offset="55%" stop-color="#FF5252" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#FF5252" stop-opacity="0"/>
     </radialGradient>
-    <clipPath id="hclip"><rect width="760" height="236" rx="18"/></clipPath>
-
-    <clipPath id="lineA">
-      <rect x="44" y="160" width="0" height="40">
-        <animate attributeName="width" values="0;0;524;524;0;0;0"
-                 keyTimes="0;0.03;0.1875;0.4125;0.45;0.5;1"
-                 dur="16s" repeatCount="indefinite"/>
-      </rect>
-    </clipPath>
-    <clipPath id="lineB">
-      <rect x="44" y="160" width="0" height="40">
-        <animate attributeName="width" values="0;0;690;690;0;0"
-                 keyTimes="0;0.53;0.6875;0.9125;0.95;1"
-                 dur="16s" repeatCount="indefinite"/>
-      </rect>
+    <radialGradient id="cornerGlow" cx="88%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#FF6B4A" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#FF6B4A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5252"/>
+      <stop offset="70%" stop-color="#FF7849"/>
+      <stop offset="100%" stop-color="#FF7849" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sheenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.035"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="dotGrid" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#262D3B" opacity="0.65"/>
+    </pattern>
+    <clipPath id="heroCardClip">
+      <rect x="1" y="1" width="758" height="216" rx="16"/>
     </clipPath>
   </defs>
 
-  <style>
-    .wordmark {
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 92px;
-      font-weight: 800;
-      letter-spacing: -3px;
-      fill: #F2F4F7;
-    }
-    .typed {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-      font-size: 23px;
-      fill: #98A0AB;
-      white-space: pre;
-    }
-    .caret { fill: #FF5C5C; }
-  </style>
+  <!-- Main Card Base -->
+  <rect x="1" y="1" width="758" height="216" rx="16" fill="url(#heroBg)" stroke="#1E2430" stroke-width="1.2"/>
 
-  <g clip-path="url(#hclip)">
-    <rect width="760" height="236" fill="url(#hbg)"/>
-    <ellipse cx="70" cy="0" rx="260" ry="190" fill="url(#hglow)"/>
+  <g clip-path="url(#heroCardClip)">
+    <!-- Subtle Engineering Dot Grid & Ambient Glows -->
+    <rect x="360" y="0" width="400" height="218" fill="url(#dotGrid)" opacity="0.55"/>
+    <rect x="0" y="0" width="760" height="218" fill="url(#crimsonGlow)"/>
+    <rect x="0" y="0" width="760" height="218" fill="url(#cornerGlow)"/>
 
-    <rect x="-220" y="0" width="220" height="236" fill="url(#hsheen)" transform="skewX(-16)">
-      <animateTransform attributeName="transform" type="translate" values="0 0;1180 0" dur="11s" repeatCount="indefinite" additive="sum"/>
+    <!-- Right-Side Hardware IC / Kernel Ring-0 Schematic Graphic -->
+    <g transform="translate(548, 28)" opacity="0.9">
+      <!-- Outer circuit traces -->
+      <path d="M -36 42 H 16 L 28 54 M -22 80 H 16 M -36 118 H 16 L 28 106" fill="none" stroke="#232A38" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M 144 42 H 178 M 144 80 H 188 M 144 118 H 174" fill="none" stroke="#232A38" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M 55 18 V -4 M 80 18 V -8 M 105 18 V -4 M 55 142 V 164 M 80 142 V 168 M 105 142 V 164" fill="none" stroke="#232A38" stroke-width="1.5" stroke-linecap="round"/>
+
+      <!-- Animated Telemetry Pulse Along Trace -->
+      <circle r="2.2" fill="#FF5C5C">
+        <animateMotion path="M -36 80 H 16" dur="3.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" dur="3.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.2" fill="#FF7849">
+        <animateMotion path="M 144 80 H 188" dur="3.6s" begin="1.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.8s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Outer Silicon Package Frame -->
+      <rect x="18" y="18" width="124" height="124" rx="14" fill="#0D1118" stroke="#262E3D" stroke-width="1.4"/>
+      <rect x="30" y="30" width="100" height="100" rx="9" fill="#111620" stroke="#FF5252" stroke-width="1" stroke-opacity="0.35">
+        <animate attributeName="stroke-opacity" values="0.2;0.65;0.2" dur="4.5s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Inner Die Core -->
+      <rect x="46" y="46" width="68" height="68" rx="6" fill="#0B0E14" stroke="#2A3344" stroke-width="1"/>
+      <text x="80" y="75" text-anchor="middle" fill="#F1F5F9" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="700" letter-spacing="1">RING-0</text>
+      <text x="80" y="91" text-anchor="middle" fill="#FF6B6B" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', monospace" font-size="9.5" font-weight="600" letter-spacing="0.8">ACPI · EC0</text>
+      <text x="80" y="105" text-anchor="middle" fill="#64748B" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', monospace" font-size="8" letter-spacing="0.5">0x00120075</text>
+
+      <!-- Corner alignment pins -->
+      <circle cx="26" cy="26" r="2" fill="#FF5252" opacity="0.8">
+        <animate attributeName="opacity" values="0.3;0.95;0.3" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="134" cy="26" r="2" fill="#334155"/>
+      <circle cx="26" cy="134" r="2" fill="#334155"/>
+      <circle cx="134" cy="134" r="2" fill="#10B981" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Top Telemetry Header -->
+    <g transform="translate(38, 32)">
+      <circle cx="5" cy="-4" r="3.5" fill="#10B981">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="16" y="0" fill="#94A3B8" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" letter-spacing="1.4">IXBOSS // SYSTEMS · FIRMWARE · CROSS-PLATFORM</text>
+    </g>
+
+    <!-- Main Brand Title: BOSS -->
+    <text x="36" y="106" fill="#F8FAFC" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="68" font-weight="900" letter-spacing="-1.5">BOSS</text>
+
+    <!-- Glowing Crimson Underline Bar -->
+    <rect x="38" y="118" width="96" height="4" rx="2" fill="url(#accentLine)">
+      <animate attributeName="width" values="84;118;84" dur="6s" repeatCount="indefinite"/>
     </rect>
 
-    <text class="wordmark" x="44" y="120">BOSS</text>
-    <rect x="47" y="136" width="84" height="4" rx="2" fill="#FF5C5C"/>
+    <!-- Mandatory Exact Bio Inside Hero Banner -->
+    <text x="38" y="148" fill="#E2E8F0" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="500" letter-spacing="0.1">Just some nerd student who loves to play with everything he sees.</text>
 
-    <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0;0"
-               keyTimes="0;0.03;0.045;0.4125;0.45;0.5;1" dur="16s" repeatCount="indefinite"/>
-      <g clip-path="url(#lineA)">
-        <text class="typed" x="44" y="190" textLength="524" lengthAdjust="spacing">systems-level work · ACPI · EC · kexts</text>
-      </g>
-      <rect class="caret" x="44" y="168" width="10" height="26">
-        <animate attributeName="x" values="44;44;568;568;44;44;44"
-                 keyTimes="0;0.03;0.1875;0.4125;0.45;0.5;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/>
-      </rect>
+    <!-- Static, Clean Domain Pills (Replaces Broken Typewriter ClipPath) -->
+    <g transform="translate(38, 168)" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', monospace" font-size="10.5" font-weight="500">
+      <rect x="0" y="0" width="136" height="25" rx="6" fill="#131822" stroke="#252D3D" stroke-width="1"/>
+      <circle cx="12" cy="12.5" r="2.5" fill="#FF5C5C"/>
+      <text x="22" y="16.5" fill="#CBD5E1">ACPI &amp; EC Firmware</text>
+
+      <rect x="144" y="0" width="142" height="25" rx="6" fill="#131822" stroke="#252D3D" stroke-width="1"/>
+      <circle cx="156" cy="12.5" r="2.5" fill="#FF7849"/>
+      <text x="166" y="16.5" fill="#CBD5E1">IOKit Kexts · SwiftUI</text>
+
+      <rect x="294" y="0" width="144" height="25" rx="6" fill="#131822" stroke="#252D3D" stroke-width="1"/>
+      <circle cx="306" cy="12.5" r="2.5" fill="#38BDF8"/>
+      <text x="316" y="16.5" fill="#CBD5E1">Portable AI Runtimes</text>
+
+      <rect x="446" y="0" width="124" height="25" rx="6" fill="#131822" stroke="#252D3D" stroke-width="1"/>
+      <circle cx="458" cy="12.5" r="2.5" fill="#10B981"/>
+      <text x="468" y="16.5" fill="#CBD5E1">Offline-First Web</text>
     </g>
 
-    <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0"
-               keyTimes="0;0.53;0.545;0.9125;0.95;1" dur="16s" repeatCount="indefinite"/>
-      <g clip-path="url(#lineB)">
-        <text class="typed" x="44" y="190" textLength="690" lengthAdjust="spacing">Swift · Kotlin · C++ · JS — no cloud in the middle</text>
-      </g>
-      <rect class="caret" x="44" y="168" width="10" height="26">
-        <animate attributeName="x" values="44;44;734;734;44;44"
-                 keyTimes="0;0.53;0.6875;0.9125;0.95;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/>
-      </rect>
-    </g>
-
-    <g>
-      <rect x="656" y="98" width="4" height="26" rx="2" fill="#FF5C5C">
-        <animate attributeName="opacity" values="0.2;0.85;0.2" dur="2.8s" begin="0s" repeatCount="indefinite"/>
-      </rect>
-      <rect x="672" y="106" width="4" height="18" rx="2" fill="#FF5C5C">
-        <animate attributeName="opacity" values="0.2;0.85;0.2" dur="2.8s" begin="0.4s" repeatCount="indefinite"/>
-      </rect>
-      <rect x="688" y="102" width="4" height="22" rx="2" fill="#FF5C5C">
-        <animate attributeName="opacity" values="0.2;0.85;0.2" dur="2.8s" begin="0.8s" repeatCount="indefinite"/>
-      </rect>
-      <rect x="704" y="110" width="4" height="14" rx="2" fill="#FF5C5C">
-        <animate attributeName="opacity" values="0.2;0.85;0.2" dur="2.8s" begin="1.2s" repeatCount="indefinite"/>
-      </rect>
-    </g>
+    <!-- Subtle Ambient Sheen Pass -->
+    <rect x="-260" y="-20" width="180" height="260" fill="url(#sheenGrad)" transform="skewX(-18)">
+      <animate attributeName="x" values="-260;980" dur="12s" repeatCount="indefinite"/>
+    </rect>
   </g>
-
-  <rect x="0.5" y="0.5" width="759" height="235" rx="17.5" fill="none" stroke="#22262C"/>
 </svg>

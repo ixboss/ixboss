@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162 38" width="162" height="38" role="img" aria-label="TikTok — @ixbossss">
+  <rect x="1" y="1" width="160" height="36" rx="9" fill="#0E1218" stroke="#222936" stroke-width="1.2"/>
+  <rect x="1" y="9" width="3" height="20" rx="1.5" fill="#38BDF8"/>
+  <g transform="translate(14, 11)">
+    <path d="M10 1V11.2A3.2 3.2 0 1 1 7.2 8" fill="none" stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 1C10.6 3.2 12.2 4.6 14.5 4.8" fill="none" stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+  <text x="38" y="18" fill="#F1F5F9" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="700">TikTok</text>
+  <text x="38" y="30" fill="#64748B" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="9.5">@ixbossss</text>
+</svg>

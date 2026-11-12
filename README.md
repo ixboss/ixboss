@@ -93,3 +93,21 @@
     <img src="assets/stack.svg" alt="Stack & Architecture Matrix" width="760">
   </picture>
 </p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/divider.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg">
+    <img src="assets/divider.svg" alt="" width="760">
+  </picture>
+</p>
+
+## Activity
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/snake/snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/snake/snake-light.svg">
+    <img src="assets/snake/snake-dark.svg" alt="Contribution snake" width="760">
+  </picture>
+</p>

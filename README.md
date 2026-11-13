@@ -33,7 +33,7 @@
   </a>
 </p>
 
-> **Hardware-level control suite for ASUS ROG & TUF laptops on macOS (`v0.4.0`)** — communicates with `ATKD.WMNB` ACPI methods and `EC0` registers through `AsusBridge.kext` to program 8-point fan curves, battery charge limits (`60%` / `80%` / `100%`), thermal profiles, and Alder Lake `PL1`/`PL2` power limits.
+> A native macOS app that controls ASUS ROG & TUF laptop hardware — custom fan curves, battery charge limits, thermal profiles, and CPU power limits. Built for Hackintosh setups where Armoury Crate isn't an option. Current release: **v0.4.0**.
 >
 > <a href="https://github.com/ixboss/asus-control-macos"><img src="https://img.shields.io/github/languages/top/ixboss/asus-control-macos?style=flat-square&color=38BDF8&labelColor=0D1117" alt="Top Language"></a>
 > <a href="https://github.com/ixboss/asus-control-macos/stargazers"><img src="https://img.shields.io/github/stars/ixboss/asus-control-macos?style=flat-square&logo=github&label=Stars&color=FF5252&labelColor=0D1117" alt="Stars"></a>
@@ -52,7 +52,7 @@
   </a>
 </p>
 
-> **Multi-Harness portable zero-cloud runtime (DeepSeek, OmniRoute, Claude, Gemini)** — launches directly from a portable exFAT USB stick, desktop, or Android node with a Dual-Mode Android app (LAN Remote Controller + Standalone On-Device Runtime), pairing over local LAN via mDNS, QR bootstrap, pinned TLS 1.3 certificates, and `Ed25519` challenge-response with automatic session event replay.
+> A portable runtime for AI coding harnesses — DeepSeek, OmniRoute, Claude Code, and Gemini CLI. Runs from a USB stick or desktop, with an Android app that either controls the machine over LAN or runs the harness on the phone itself.
 >
 > <a href="https://github.com/ixboss/universal-harness"><img src="https://img.shields.io/github/languages/top/ixboss/universal-harness?style=flat-square&color=38BDF8&labelColor=0D1117" alt="Top Language"></a>
 > <a href="https://github.com/ixboss/universal-harness/stargazers"><img src="https://img.shields.io/github/stars/ixboss/universal-harness?style=flat-square&logo=github&label=Stars&color=38BDF8&labelColor=0D1117" alt="Stars"></a>
@@ -71,11 +71,10 @@
   </a>
 </p>
 
-> **Modular Offline-First PWA Quran web & mobile application (Sadaqah Jariyah)** — full 604-page Mushaf with 3D page-turn & continuous scroll, offline Ayah Tafsir, 5 audio reciters, khatmah planner, and daily adhkar cached locally in `IndexedDB` with zero tracking or ads.
+> A free, offline-capable Quran PWA built as Sadaqah Jariyah — the full Mushaf, tafsir, recitations, khatmah tracking, and daily adhkar, all stored locally on your device. No accounts, no tracking, no ads.
 >
 > <a href="https://github.com/ixboss/sadaqa-jaria"><img src="https://img.shields.io/github/languages/top/ixboss/sadaqa-jaria?style=flat-square&color=38BDF8&labelColor=0D1117" alt="Top Language"></a>
 > <a href="https://github.com/ixboss/sadaqa-jaria/stargazers"><img src="https://img.shields.io/github/stars/ixboss/sadaqa-jaria?style=flat-square&logo=github&label=Stars&color=10B981&labelColor=0D1117" alt="Stars"></a>
-> <a href="https://github.com/ixboss/sadaqa-jaria/releases"><img src="https://img.shields.io/github/v/release/ixboss/sadaqa-jaria?include_prereleases&style=flat-square&label=Release&color=10B981&labelColor=0D1117" alt="Release"></a>
 > <a href="https://ixboss.github.io/sadaqa-jaria/"><img src="https://img.shields.io/badge/PWA-100%25_Offline-10B981?style=flat-square&labelColor=0D1117" alt="Offline PWA"></a>
 > <a href="https://ixboss.github.io/sadaqa-jaria/"><img src="https://img.shields.io/badge/Live_App-ixboss.github.io%2Fsadaqa--jaria-38BDF8?style=flat-square&labelColor=0D1117" alt="Live App"></a>
 > &nbsp;·&nbsp; [**Launch Web App →**](https://ixboss.github.io/sadaqa-jaria/) · [**Repository →**](https://github.com/ixboss/sadaqa-jaria)

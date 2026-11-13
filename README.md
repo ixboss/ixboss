@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/hero.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-    <img src="assets/hero.svg" alt="BOSS — Just some nerd student who loves to play with everything he sees." width="760">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/boss.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/boss-light.svg">
+    <img src="assets/boss.svg" alt="BOSS — Just some nerd student who loves to play with everything he sees." width="760">
   </picture>
 </p>
 

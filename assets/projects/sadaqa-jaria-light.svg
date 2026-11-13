@@ -1,73 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 188" width="760" height="188" role="img" aria-label="03 — sadaqa-jaria: Offline-first Quran web and mobile app">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 104" width="760" height="104" role="img" aria-label="sadaqa-jaria — offline-first Quran PWA">
   <defs>
-    <linearGradient id="cardBg3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#0F172A"/>
+    <clipPath id="c"><rect x="0.5" y="0.5" width="759" height="103" rx="14"/></clipPath>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#059669" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#059669"/>
+      <stop offset="1" stop-color="#059669" stop-opacity="0"/>
     </linearGradient>
   </defs>
-
-  <rect x="1" y="1" width="758" height="186" rx="14" fill="url(#cardBg3)" stroke="#D0D7DE" stroke-width="1.2"/>
-  <rect x="1" y="24" width="3.5" height="140" rx="1.75" fill="#059669"/>
-
-  <!-- Left Content Area -->
-  <g transform="translate(26, 28)">
-    <text x="0" y="0" fill="#059669" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="10.5" font-weight="700" letter-spacing="1.2">03 // OFFLINE-FIRST PROGRESSIVE WEB &amp; MOBILE APP</text>
-
-    <text x="0" y="28" fill="#0F172A" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="23" font-weight="800" letter-spacing="-0.4">sadaqa-jaria</text>
-
-    <text x="0" y="52" fill="#334155" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="400">Privacy-first, zero-tracking Islamic app for Quran reading, tafsir, audio &amp; khatmah.</text>
-
-    <g transform="translate(0, 72)" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="11" fill="#475569">
-      <circle cx="5" cy="-4" r="2.2" fill="#059669"/>
-      <text x="15" y="0">Full 604-page Mushaf cached locally via Service Worker &amp; <tspan fill="#1E293B">IndexedDB</tspan></text>
-
-      <circle cx="5" cy="16" r="2.2" fill="#0284C7"/>
-      <text x="15" y="20">Interactive 3D touch page-turn engine, 5 reciters, tafsir &amp; khatmah planner</text>
-
-      <circle cx="5" cy="36" r="2.2" fill="#FF7849"/>
-      <text x="15" y="40">Zero external frameworks, zero build step, zero telemetry or ads</text>
-    </g>
-
-    <!-- Tech Stack Pills -->
-    <g transform="translate(0, 126)" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="10" font-weight="600" fill="#334155">
-      <rect x="0" y="0" width="84" height="22" rx="5" fill="#0F172A" stroke="#334155"/>
-      <text x="42" y="14.5" text-anchor="middle">Vanilla JS</text>
-
-      <rect x="92" y="0" width="108" height="22" rx="5" fill="#0F172A" stroke="#334155"/>
-      <text x="146" y="14.5" text-anchor="middle">Service Worker</text>
-
-      <rect x="208" y="0" width="82" height="22" rx="5" fill="#0F172A" stroke="#334155"/>
-      <text x="249" y="14.5" text-anchor="middle">IndexedDB</text>
-
-      <rect x="298" y="0" width="80" height="22" rx="5" fill="#0F172A" stroke="#334155"/>
-      <text x="338" y="14.5" text-anchor="middle">Capacitor</text>
-
-      <rect x="386" y="0" width="96" height="22" rx="5" fill="#0F172A" stroke="#334155"/>
-      <text x="434" y="14.5" text-anchor="middle" fill="#059669">100% Local</text>
-    </g>
-  </g>
-
-  <!-- Right Micro-Visual: Geometric Star + Offline Storage Meter -->
-  <g transform="translate(534, 22)">
-    <rect x="0" y="0" width="204" height="144" rx="10" fill="#0F172A" stroke="#D0D7DE" stroke-width="1"/>
-    <text x="12" y="19" fill="#475569" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="9.5" font-weight="700">STORAGE // LOCAL-ONLY</text>
-    <text x="192" y="19" text-anchor="end" fill="#059669" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="9" font-weight="700">OFFLINE</text>
-
-    <!-- Sacred Geometric Octagram Emblem -->
-    <g transform="translate(102, 68)">
-      <circle cx="0" cy="0" r="30" fill="#059669" fill-opacity="0.06">
-        <animate attributeName="r" values="26;33;26" dur="4.5s" repeatCount="indefinite"/>
-      </circle>
-      <rect x="-18" y="-18" width="36" height="36" rx="3" fill="none" stroke="#059669" stroke-width="1.3" stroke-opacity="0.75"/>
-      <rect x="-18" y="-18" width="36" height="36" rx="3" fill="none" stroke="#0284C7" stroke-width="1.3" stroke-opacity="0.65" transform="rotate(45)"/>
-      <text x="0" y="4" text-anchor="middle" fill="#0F172A" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="10.5" font-weight="700">604p</text>
-    </g>
-
-    <!-- IndexedDB Precache Bar -->
-    <rect x="16" y="108" width="172" height="6" rx="3" fill="#1E293B"/>
-    <rect x="16" y="108" width="172" height="6" rx="3" fill="#059669" opacity="0.85"/>
-
-    <text x="14" y="133" fill="#64748B" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="8.5">TRACKERS: 0</text>
-    <text x="190" y="133" text-anchor="end" fill="#059669" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="8.5">CACHE: READY</text>
+  <rect x="0.5" y="0.5" width="759" height="103" rx="14" fill="#FFFFFF" stroke="#E5E9F0" stroke-width="1"/>
+  <g clip-path="url(#c)">
+    <rect x="-120" y="0.75" width="120" height="1.5" fill="url(#g)">
+      <animate attributeName="x" values="-120;760" dur="9s" begin="6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="40" y="48" fill="#0F172A" font-family="'Inter','Segoe UI',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="-0.3">sadaqa-jaria</text>
+    <rect x="41" y="56" width="44" height="2.5" rx="1.25" fill="#059669">
+      <animate attributeName="width" values="44;68;44" dur="7s" begin="4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="40" y="82" fill="#5B6B7F" font-family="'Inter','Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" font-weight="400">offline-first Quran PWA · Sadaqah Jariyah</text>
+    <rect x="602" y="38" width="118" height="26" rx="7" fill="#F4F6FA" stroke="#E2E8F0" stroke-width="1"/>
+    <circle cx="617" cy="51" r="3" fill="#059669"/>
+    <text x="628" y="55.5" fill="#334155" font-family="'Inter','Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500">JavaScript</text>
   </g>
 </svg>

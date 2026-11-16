@@ -1,24 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 104" width="760" height="104" role="img" aria-label="sadaqa-jaria — offline-first Quran PWA">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 112" width="760" height="112" role="img" aria-label="04 sadaqa-jaria — zero-dependency offline-first Quran PWA">
   <defs>
-    <clipPath id="c"><rect x="0.5" y="0.5" width="759" height="103" rx="14"/></clipPath>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#10B981" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#10B981"/>
-      <stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+    <clipPath id="p4ClipD"><rect x="0.5" y="0.5" width="759" height="111" rx="14"/></clipPath>
+    <linearGradient id="p4GradD" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00E5FF"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <rect x="0.5" y="0.5" width="759" height="103" rx="14" fill="#0B0E13" stroke="#1E2430" stroke-width="1"/>
-  <g clip-path="url(#c)">
-    <rect x="-120" y="0.75" width="120" height="1.5" fill="url(#g)">
-      <animate attributeName="x" values="-120;760" dur="9s" begin="6s" repeatCount="indefinite"/>
+  <rect x="0.5" y="0.5" width="759" height="111" rx="14" fill="#05070B" stroke="#18273A" stroke-width="1"/>
+  <g clip-path="url(#p4ClipD)">
+    <rect x="-140" y="0.75" width="140" height="1.5" fill="url(#p4GradD)">
+      <animate attributeName="x" values="-140;760" dur="9s" begin="6s" repeatCount="indefinite"/>
     </rect>
-    <text x="40" y="48" fill="#F2F6FB" font-family="'Inter','Segoe UI',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="-0.3">sadaqa-jaria</text>
-    <rect x="41" y="56" width="44" height="2.5" rx="1.25" fill="#10B981">
-      <animate attributeName="width" values="44;68;44" dur="7s" begin="4s" repeatCount="indefinite"/>
+    <text x="36" y="30" fill="#00E5FF" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10" font-weight="600" letter-spacing="1.2">04 // OFFLINE-FIRST PWA &amp; CAPACITOR CI/CD</text>
+    <text x="36" y="57" fill="#F8FAFC" font-family="'Space Grotesk', Inter, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.3">sadaqa-jaria</text>
+    <rect x="36" y="66" width="44" height="2.5" rx="1.25" fill="#00E5FF">
+      <animate attributeName="width" values="44;72;44" dur="7s" begin="4.5s" repeatCount="indefinite"/>
     </rect>
-    <text x="40" y="82" fill="#AEBACB" font-family="'Inter','Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" font-weight="400">offline-first Quran PWA · Sadaqah Jariyah</text>
-    <rect x="602" y="38" width="118" height="26" rx="7" fill="#12161F" stroke="#232B39" stroke-width="1"/>
-    <circle cx="617" cy="51" r="3" fill="#10B981"/>
-    <text x="628" y="55.5" fill="#C9D3E0" font-family="'Inter','Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500">JavaScript</text>
+    <text x="36" y="92" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="12.5" font-weight="400">Zero-dependency offline Quran PWA · Service Worker + Intl Hijri + Android/iOS</text>
+    <rect x="576" y="42" width="148" height="28" rx="8" fill="#0B0F17" stroke="#18273A" stroke-width="1"/>
+    <circle cx="592" cy="56" r="3.2" fill="#00E5FF"/>
+    <text x="604" y="60" fill="#F8FAFC" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="11" font-weight="500">JS · 100% Offline</text>
   </g>
 </svg>

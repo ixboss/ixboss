@@ -47,10 +47,10 @@
   </picture>
 </p>
 
-> <sub>A high-performance Flutter video engineering suite with a floating iOS Liquid Glass navigation bar, AR/EN localization, FFmpeg timestamp-scaling (<code>-itsscale 2</code>) &amp; motion-blur presets engineered to survive platform recompression, and Ed25519-signed offline licensing.</sub>
+> <sub>Private cross-platform Flutter app engineered to boost export clarity and bypass TikTok &amp; Instagram Reels compression — featuring a Liquid Glass UI, bilingual AR/EN support, proprietary media optimization, and Ed25519-signed offline licensing.</sub>
 >
 > <img src="https://img.shields.io/badge/-Flutter-05070B?style=flat-square&logo=flutter&logoColor=8B5CF6" alt="Flutter">
-> <img src="https://img.shields.io/badge/-FFmpeg-05070B?style=flat-square&logo=ffmpeg&logoColor=00E5FF" alt="FFmpeg">
+> <img src="https://img.shields.io/badge/-Media_Optimizer-05070B?style=flat-square" alt="Media Optimizer">
 > <img src="https://img.shields.io/badge/-Ed25519_Licensing-05070B?style=flat-square" alt="Ed25519 Licensing">
 
 <p align="center">

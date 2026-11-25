@@ -1,25 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 112" width="760" height="112" role="img" aria-label="03 universal-harness — encrypted cross-platform device bridge">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 112" width="760" height="112" role="img" aria-label="04 universal-harness — Portable AI CLI Runtime &amp; Encrypted Android LAN Bridge">
   <defs>
-    <clipPath id="p3ClipL"><rect x="0.5" y="0.5" width="759" height="111" rx="14"/></clipPath>
-    <linearGradient id="p3GradL" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#0284C7" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#0284C7"/>
-      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    <clipPath id="p04universal-harnessLClip"><rect x="0.5" y="0.5" width="759" height="111" rx="14"/></clipPath>
+    <linearGradient id="p04universal-harnessLGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#0284C7" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <rect x="0.5" y="0.5" width="759" height="111" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
-  <g clip-path="url(#p3ClipL)">
-    <rect x="-140" y="0.75" width="140" height="1.5" fill="url(#p3GradL)">
-      <animate attributeName="x" values="-140;760" dur="9s" begin="4s" repeatCount="indefinite"/>
+  <g clip-path="url(#p04universal-harnessLClip)">
+    <rect x="-140" y="0.75" width="140" height="1.5" fill="url(#p04universal-harnessLGrad)">
+      <animate attributeName="x" values="-140;760" dur="9s" begin="4.5s" repeatCount="indefinite"/>
     </rect>
-    <text x="36" y="30" fill="#0284C7" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10" font-weight="600" letter-spacing="1.2">03 // CROSS-PLATFORM DEVICE BRIDGE</text>
+    <text x="36" y="30" fill="#7C3AED" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10" font-weight="600" letter-spacing="1.2">04 // PORTABLE AI RUNTIME BRIDGE</text>
     <text x="36" y="57" fill="#0F172A" font-family="'Space Grotesk', Inter, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.3">universal-harness</text>
-    <rect x="36" y="66" width="44" height="2.5" rx="1.25" fill="#0284C7">
-      <animate attributeName="width" values="44;72;44" dur="7s" begin="3s" repeatCount="indefinite"/>
+    <rect x="36" y="66" width="44" height="2.5" rx="1.25" fill="#7C3AED">
+      <animate attributeName="width" values="44;72;44" dur="7s" begin="4.5s" repeatCount="indefinite"/>
     </rect>
-    <text x="36" y="92" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="12.5" font-weight="400">Portable runtime &amp; encrypted LAN TLS / USB / Android orchestration</text>
-    <rect x="578" y="42" width="146" height="28" rx="8" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
-    <circle cx="594" cy="56" r="3.2" fill="#0284C7"/>
-    <text x="606" y="60" fill="#0F172A" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="11" font-weight="500">Kotlin · LAN TLS</text>
+    <text x="36" y="92" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="12.5" font-weight="400">Portable AI CLI Runtime &amp; Encrypted Android LAN Bridge</text>
+    <rect x="528" y="42" width="196" height="28" rx="8" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+    <circle cx="544" cy="56" r="3.2" fill="#7C3AED"/>
+    <text x="556" y="60" fill="#0F172A" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10.5" font-weight="500">TypeScript · Active</text>
   </g>
 </svg>

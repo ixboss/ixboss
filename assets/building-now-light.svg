@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 88" width="760" height="88" role="img" aria-label="Building Now — Sadaqa Jaria v2 &amp; Cross-Platform Systems Tooling">
+  <defs>
+    <clipPath id="bnClipL"><rect x="0.6" y="0.6" width="758.8" height="86.8" rx="14"/></clipPath>
+    <linearGradient id="bnBeamL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0284C7" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#0284C7"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0.6" y="0.6" width="758.8" height="86.8" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+
+  <g clip-path="url(#bnClipL)">
+    <rect x="-150" y="0.8" width="150" height="1.5" fill="url(#bnBeamL)">
+      <animate attributeName="x" values="-150;760" dur="8s" repeatCount="indefinite"/>
+    </rect>
+
+    <circle cx="32" cy="27" r="4" fill="#0284C7">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="45" y="30.5" fill="#0284C7" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10.5" font-weight="700" letter-spacing="1.4">BUILDING NOW // ACTIVE FOCUS</text>
+
+    <text x="30" y="61" fill="#0F172A" font-family="'Space Grotesk', Inter, Arial, sans-serif" font-size="15.5" font-weight="700">Sadaqa Jaria v2 &amp; Cross-Platform Systems Tooling</text>
+
+    <rect x="572" y="28" width="160" height="32" rx="8" fill="#F8FAFC" stroke="#0284C7" stroke-opacity="0.45" stroke-width="1"/>
+    <text x="652" y="48" text-anchor="middle" fill="#0F172A" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10.5" font-weight="600">sadaqa-jaria ↗</text>
+    <text x="732" y="20" text-anchor="end" fill="#475569" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="9" font-weight="500">CASE STUDY</text>
+  </g>
+</svg>

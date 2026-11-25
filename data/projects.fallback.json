@@ -1,0 +1,146 @@
+{
+  "version": 1,
+  "bio": "Just some nerd who loves to play with everything he sees.",
+  "buildingNow": {
+    "label": "Sadaqa Jaria v2 & Cross-Platform Systems Tooling",
+    "projectSlug": "sadaqa-jaria"
+  },
+  "exclude": [
+    "ixboss",
+    "boss-portfolio",
+    "my-agent-skills",
+    "zerodrop"
+  ],
+  "projects": [
+    {
+      "slug": "sadaqa-jaria",
+      "order": 1,
+      "visibility": "public",
+      "status": "active",
+      "title": "إسلامي · Islami",
+      "category": "Offline-First Islamic Web App (PWA)",
+      "subtitle": "Free Islamic App — Works 100% Offline",
+      "role": "Open Source",
+      "description": "A free Islamic companion app that works with no internet at all: the complete 604-page Quran with offline commentary, accurate prayer times, Adhkar, and reading plans — installable on web, iOS, Android, and desktop.",
+      "tech": [
+        "Vanilla JavaScript",
+        "Offline-First PWA",
+        "Service Worker + IndexedDB"
+      ],
+      "highlights": [
+        "The full 604-page Uthmani Mushaf with Tafsir Al-Muyassar — readable with no internet",
+        "Accurate prayer times, Adhkar, Tasbih, and Khatmah reading plans",
+        "Zero ads, zero tracking — installs like a native app on web, iOS, Android, and desktop"
+      ],
+      "live": "https://ixboss.github.io/sadaqa-jaria/",
+      "caseStudy": {
+        "problem": "Daily Islamic tools — Quran with commentary, prayer times, Adhkar, reading plans — must work instantly with zero internet, and web apps usually die the moment the connection drops.",
+        "approach": "Built a zero-dependency offline-first app: a Service Worker caches everything, the device stores the full Tafsir locally, and the whole thing installs like a native app while staying pure vanilla JavaScript.",
+        "architecture": [
+          "Zero-dependency modular vanilla JavaScript — no frameworks, no trackers, no ads",
+          "Service Worker precache + on-device storage for the complete offline Tafsir Al-Muyassar",
+          "Tap any verse to read its offline commentary in place",
+          "Installs as a native app across web, iOS, Android, and desktop"
+        ]
+      }
+    },
+    {
+      "slug": "asus-control-macos",
+      "order": 2,
+      "visibility": "public",
+      "status": "active",
+      "title": "asus-control-macos",
+      "category": "macOS Thermal & Power Control Suite",
+      "subtitle": "Fan, Thermal & Power Control for macOS on ASUS Laptops",
+      "role": "Open Source",
+      "description": "Full fan, thermal, and power control for ASUS TUF & ROG laptops running macOS — custom fan curves, switchable power modes, and live temperature readings, all from a native menu bar app.",
+      "tech": [
+        "Swift",
+        "IOKit",
+        "macOS Kernel Extension (C++)",
+        "Hardware Sensors",
+        "GitHub Actions CI"
+      ],
+      "highlights": [
+        "Custom fan curves and power modes that macOS never provides on ASUS hardware",
+        "Live temperature and fan-speed telemetry read straight from the machine's sensors",
+        "Reacts to hardware changes instantly — no background polling, no battery drain"
+      ],
+      "caseStudy": {
+        "problem": "ASUS laptop owners running macOS get no vendor support: macOS can't see the fans, can't switch power modes, and the hardware runs hot and loud with no way to control it.",
+        "approach": "Built a native macOS control suite: a kernel extension for safe hardware access, an event-driven daemon that responds to sensor changes the moment they happen, and a clean menu bar app for fan curves and power modes.",
+        "architecture": [
+          "macOS kernel extension (C++ / IOKit) with strict safety boundaries for hardware access",
+          "Event-driven control daemon — responds to sensor events instead of polling on a timer",
+          "Native Swift menu bar app with custom fan curves and live thermal telemetry",
+          "Per-model capability profiles covering supported ASUS TUF & ROG laptops"
+        ]
+      }
+    },
+    {
+      "slug": "bossmax",
+      "order": 3,
+      "visibility": "private",
+      "status": "active",
+      "title": "BOSSMAX",
+      "category": "Mobile Video Clarity & Compression Optimizer",
+      "subtitle": "Cross-Platform Video Export Optimizer for Short-Form Platforms",
+      "role": "Product Build",
+      "description": "Cross-platform Flutter mobile application for preparing high-clarity social video exports with platform-tuned presets for TikTok and Instagram Reels, one-tap workflows, a bilingual Arabic/English interface, and offline execution.",
+      "tech": [
+        "Flutter",
+        "Dart",
+        "Video Encoding",
+        "Liquid Glass UI"
+      ],
+      "highlights": [
+        "Platform-calibrated export presets for TikTok and Instagram Reels delivery targets",
+        "One-tap export pipeline selecting target output parameters automatically",
+        "Full offline operation with a bilingual Arabic/English interface"
+      ],
+      "caseStudy": {
+        "problem": "Short-form video platforms aggressively re-encode uploads, degrading sharpness and 60fps motion smoothness unless exports are calibrated to each platform's delivery targets.",
+        "approach": "Built a cross-platform Flutter application with per-platform export presets, streamlined one-tap local processing, a bilingual Arabic/English Liquid Glass interface, and self-contained offline license verification.",
+        "architecture": [
+          "Flutter + Dart cross-platform UI with Liquid Glass navigation and bilingual AR/EN localization",
+          "Per-platform export presets tuned to TikTok and Instagram Reels compression limits",
+          "One-tap local export workflow engineered for consistent visual clarity",
+          "Offline license verification with zero runtime network dependency"
+        ]
+      }
+    },
+    {
+      "slug": "universal-harness",
+      "order": 4,
+      "visibility": "public",
+      "status": "active",
+      "title": "universal-harness",
+      "category": "Portable AI Runtime Bridge",
+      "subtitle": "Portable AI CLI Runtime & Encrypted Android LAN Bridge",
+      "role": "Open Source",
+      "description": "Portable TypeScript/Node.js runtime for running AI coding CLIs from a USB drive or desktop host without local installation, paired with an encrypted local-network bridge to an Android companion.",
+      "tech": [
+        "TypeScript",
+        "Node.js",
+        "Android / Kotlin",
+        "Encrypted LAN",
+        "Portable USB"
+      ],
+      "highlights": [
+        "Runs AI coding CLIs such as Claude Code and Gemini CLI from a USB drive with zero host installation",
+        "Dual-mode Kotlin Android companion: encrypted remote controller or standalone on-device runtime",
+        "End-to-end encrypted local-network transport between desktop hosts and mobile devices"
+      ],
+      "caseStudy": {
+        "problem": "AI coding CLIs and their configurations are typically tied to a single host machine, requiring repeated setup across laptops and leaving no portable remote workflow.",
+        "approach": "Built a self-contained portable runtime for USB drives and desktops behind a unified CLI adapter interface, paired with a Kotlin Android app serving as both an encrypted remote controller and a standalone on-device server.",
+        "architecture": [
+          "Single portable TypeScript / Node.js runtime — zero-install execution on USB or desktop",
+          "Unified CLI adapter layer for integrating AI coding tools without duplicating core logic",
+          "Encrypted local-network transport between desktop hosts and mobile endpoints",
+          "Kotlin Android app: secure remote controller and standalone on-device server"
+        ]
+      }
+    }
+  ]
+}

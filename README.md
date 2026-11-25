@@ -1,17 +1,30 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/boss.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/boss-light.svg">
-    <img src="assets/boss.svg" alt="BOSS — Just some nerd who loves to play with everything he sees." width="760">
-  </picture>
+  <a href="https://ixboss.vercel.app">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/boss.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/boss-light.svg">
+      <img src="assets/boss.svg" alt="BOSS — Just some nerd who loves to play with everything he sees." width="760">
+    </picture>
+  </a>
 </p>
 
 <p align="center">
+  <a href="https://ixboss.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/badges/portfolio.svg"><source media="(prefers-color-scheme: light)" srcset="assets/badges/portfolio-light.svg"><img src="assets/badges/portfolio.svg" alt="Portfolio ixboss.vercel.app" width="240"></picture></a>&nbsp;
   <a href="mailto:hossam.m.ghareeb@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/badges/email.svg"><source media="(prefers-color-scheme: light)" srcset="assets/badges/email-light.svg"><img src="assets/badges/email.svg" alt="Email hossam.m.ghareeb" width="240"></picture></a>&nbsp;
-  <a href="https://www.tiktok.com/@ixbossss"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/badges/tiktok.svg"><source media="(prefers-color-scheme: light)" srcset="assets/badges/tiktok-light.svg"><img src="assets/badges/tiktok.svg" alt="TikTok @ixbossss" width="240"></picture></a>&nbsp;
-  <a href="https://www.instagram.com/ixbosss"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/badges/instagram.svg"><source media="(prefers-color-scheme: light)" srcset="assets/badges/instagram-light.svg"><img src="assets/badges/instagram.svg" alt="Instagram @ixbosss" width="240"></picture></a>&nbsp;
   <a href="https://github.com/ixboss?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/badges/github.svg"><source media="(prefers-color-scheme: light)" srcset="assets/badges/github-light.svg"><img src="assets/badges/github.svg" alt="GitHub @ixboss" width="240"></picture></a>
 </p>
+
+<!-- AUTO:BUILDING:START -->
+<p align="center">
+  <a href="https://ixboss.vercel.app/?project=sadaqa-jaria">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/building-now.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/building-now-light.svg">
+      <img src="assets/building-now.svg" alt="Building Now — Sadaqa Jaria v2 &amp; Cross-Platform Systems Tooling" width="760">
+    </picture>
+  </a>
+</p>
+<!-- AUTO:BUILDING:END -->
 
 <p align="center">
   <picture>
@@ -23,68 +36,63 @@
 
 ## `[ 01 — SYSTEMS & CODE ]`
 
+<!-- AUTO:PROJECTS:START -->
 <p align="center">
-  <a href="https://github.com/ixboss/asus-control-macos">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="assets/projects/asus-control-macos.svg">
-      <source media="(prefers-color-scheme: light)" srcset="assets/projects/asus-control-macos-light.svg">
-      <img src="assets/projects/asus-control-macos.svg" alt="01 asus-control-macos — macOS hardware control for ASUS ROG & TUF laptops" width="760">
-    </picture>
-  </a>
-</p>
-
-> <sub>A native macOS app that controls ASUS ROG &amp; TUF laptop hardware — custom fan curves, battery charge limits, thermal profiles, and CPU power limits. Built for Hackintosh setups where Armoury Crate isn't an option.</sub>
->
-> <a href="https://github.com/ixboss/asus-control-macos"><img src="https://img.shields.io/badge/-Swift-05070B?style=flat-square&logo=swift&logoColor=00E5FF" alt="Swift"></a>
-> <a href="https://github.com/ixboss/asus-control-macos/stargazers"><img src="https://img.shields.io/github/stars/ixboss/asus-control-macos?style=flat-square&logo=github&labelColor=05070B&color=0B0F17" alt="Stars"></a>
-> <a href="https://github.com/ixboss/asus-control-macos/releases"><img src="https://img.shields.io/github/v/release/ixboss/asus-control-macos?style=flat-square&logo=github&labelColor=05070B&color=0B0F17" alt="Release"></a>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/projects/bossmax.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/projects/bossmax-light.svg">
-    <img src="assets/projects/bossmax.svg" alt="02 BOSSMAX — mobile video engineering & FFmpeg encoding suite" width="760">
-  </picture>
-</p>
-
-> <sub>Private cross-platform Flutter app engineered to boost export clarity and bypass TikTok &amp; Instagram Reels compression — featuring a Liquid Glass UI, bilingual AR/EN support, proprietary media optimization, and Ed25519-signed offline licensing.</sub>
->
-> <img src="https://img.shields.io/badge/-Flutter-05070B?style=flat-square&logo=flutter&logoColor=8B5CF6" alt="Flutter">
-> <img src="https://img.shields.io/badge/-Media_Optimizer-05070B?style=flat-square" alt="Media Optimizer">
-> <img src="https://img.shields.io/badge/-Ed25519_Licensing-05070B?style=flat-square" alt="Ed25519 Licensing">
-
-<p align="center">
-  <a href="https://github.com/ixboss/universal-harness">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="assets/projects/universal-harness.svg">
-      <source media="(prefers-color-scheme: light)" srcset="assets/projects/universal-harness-light.svg">
-      <img src="assets/projects/universal-harness.svg" alt="03 universal-harness — portable runtime for AI coding harnesses" width="760">
-    </picture>
-  </a>
-</p>
-
-> <sub>A portable runtime for AI coding harnesses — DeepSeek, OmniRoute, Claude Code, and Gemini CLI. Runs from a USB stick or desktop, with an Android app that either controls the machine over LAN or runs the harness on the phone itself.</sub>
->
-> <a href="https://github.com/ixboss/universal-harness"><img src="https://img.shields.io/badge/-Kotlin-05070B?style=flat-square&logo=kotlin&logoColor=8B5CF6" alt="Kotlin"></a>
-> <a href="https://github.com/ixboss/universal-harness/stargazers"><img src="https://img.shields.io/github/stars/ixboss/universal-harness?style=flat-square&logo=github&labelColor=05070B&color=0B0F17" alt="Stars"></a>
-> <a href="https://github.com/ixboss/universal-harness/releases"><img src="https://img.shields.io/github/v/release/ixboss/universal-harness?style=flat-square&logo=github&labelColor=05070B&color=0B0F17" alt="Release"></a>
-
-<p align="center">
-  <a href="https://ixboss.github.io/sadaqa-jaria/">
+  <a href="https://ixboss.vercel.app/?project=sadaqa-jaria">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/projects/sadaqa-jaria.svg">
       <source media="(prefers-color-scheme: light)" srcset="assets/projects/sadaqa-jaria-light.svg">
-      <img src="assets/projects/sadaqa-jaria.svg" alt="04 sadaqa-jaria — offline-first Quran PWA" width="760">
+      <img src="assets/projects/sadaqa-jaria.svg" alt="01 إسلامي · Islami — Free Islamic App — Works 100% Offline" width="760">
     </picture>
   </a>
 </p>
 
-> <sub>A free, offline-capable Quran PWA built as Sadaqah Jariyah — the full Mushaf, tafsir, recitations, khatmah tracking, and daily adhkar, all stored locally on your device. No accounts, no tracking, no ads.</sub>
+> <sub>A free Islamic companion app that works with no internet at all: the complete 604-page Quran with offline commentary, accurate prayer times, Adhkar, and reading plans — installable on web, iOS, Android, and desktop.</sub>
 >
-> <a href="https://github.com/ixboss/sadaqa-jaria"><img src="https://img.shields.io/badge/-JavaScript-05070B?style=flat-square&logo=javascript&logoColor=00E5FF" alt="JavaScript"></a>
-> <a href="https://github.com/ixboss/sadaqa-jaria/stargazers"><img src="https://img.shields.io/github/stars/ixboss/sadaqa-jaria?style=flat-square&logo=github&labelColor=05070B&color=0B0F17" alt="Stars"></a>
-> <a href="https://ixboss.github.io/sadaqa-jaria/"><img src="https://img.shields.io/badge/-PWA_100%25_Offline-05070B?style=flat-square&logo=pwa&logoColor=00E5FF" alt="PWA 100% Offline"></a>
-> <a href="https://ixboss.github.io/sadaqa-jaria/"><img src="https://img.shields.io/badge/-Live_App-05070B?style=flat-square" alt="Live App"></a>
+> <sub>`Vanilla JavaScript` · `Offline-First PWA` · `Service Worker + IndexedDB` — [Case Study ↗](https://ixboss.vercel.app/?project=sadaqa-jaria) · [Live App ↗](https://ixboss.github.io/sadaqa-jaria/) · [GitHub Repo ↗](https://github.com/ixboss/sadaqa-jaria) · **Status:** Active</sub>
+
+<p align="center">
+  <a href="https://ixboss.vercel.app/?project=asus-control-macos">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/projects/asus-control-macos.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/projects/asus-control-macos-light.svg">
+      <img src="assets/projects/asus-control-macos.svg" alt="02 asus-control-macos — Fan, Thermal &amp; Power Control for macOS on ASUS Laptops" width="760">
+    </picture>
+  </a>
+</p>
+
+> <sub>Full fan, thermal, and power control for ASUS TUF &amp; ROG laptops running macOS — custom fan curves, switchable power modes, and live temperature readings, all from a native menu bar app.</sub>
+>
+> <sub>`Swift` · `IOKit` · `macOS Kernel Extension (C++)` — [Case Study ↗](https://ixboss.vercel.app/?project=asus-control-macos) · [GitHub Repo ↗](https://github.com/ixboss/asus-control-macos) · **★ 6 Stars**</sub>
+
+<p align="center">
+  <a href="https://ixboss.vercel.app/?project=bossmax">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/projects/bossmax.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/projects/bossmax-light.svg">
+      <img src="assets/projects/bossmax.svg" alt="03 BOSSMAX — Cross-Platform Video Export Optimizer for Short-Form Platforms" width="760">
+    </picture>
+  </a>
+</p>
+
+> <sub>Cross-platform Flutter mobile application for preparing high-clarity social video exports with platform-tuned presets for TikTok and Instagram Reels, one-tap workflows, a bilingual Arabic/English interface, and offline execution.</sub>
+>
+> <sub>`Flutter` · `Dart` · `Video Encoding` — [Case Study ↗](https://ixboss.vercel.app/?project=bossmax) · **Status:** Private Product Build</sub>
+
+<p align="center">
+  <a href="https://ixboss.vercel.app/?project=universal-harness">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/projects/universal-harness.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/projects/universal-harness-light.svg">
+      <img src="assets/projects/universal-harness.svg" alt="04 universal-harness — Portable AI CLI Runtime &amp; Encrypted Android LAN Bridge" width="760">
+    </picture>
+  </a>
+</p>
+
+> <sub>Portable TypeScript/Node.js runtime for running AI coding CLIs from a USB drive or desktop host without local installation, paired with an encrypted local-network bridge to an Android companion.</sub>
+>
+> <sub>`TypeScript` · `Node.js` · `Android / Kotlin` — [Case Study ↗](https://ixboss.vercel.app/?project=universal-harness) · [GitHub Repo ↗](https://github.com/ixboss/universal-harness) · **Status:** Active</sub>
+<!-- AUTO:PROJECTS:END -->
 
 <p align="center">
   <picture>
@@ -111,13 +119,18 @@
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/esports.svg">
       <source media="(prefers-color-scheme: light)" srcset="assets/esports-light.svg">
-      <img src="assets/esports.svg" alt="Verified esports career — Boss (Hossam Mohamed Abdo), ForKill Esports, PMNC Egypt 2026 Spring Champion" width="760">
+      <img src="assets/esports.svg" alt="Verified esports career — Boss (Hossam Mohamed Abdo), PMNC Egypt 2026 Spring Champion" width="760">
     </picture>
   </a>
 </p>
 
 <p align="center">
-  <sub><a href="https://liquipedia.net/pubgmobile/Boss_(Egyptian_player)">ForKill Esports · PMNC Egypt 2026 Spring Champion — verified on Liquipedia ↗</a></sub>
+  <sub><a href="https://liquipedia.net/pubgmobile/Boss_(Egyptian_player)">PMNC Egypt 2026 Spring Champion · Competitive PUBG Mobile — verified on Liquipedia ↗</a></sub>
+</p>
+
+<p align="center">
+  <a href="https://www.tiktok.com/@ixbossss"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/badges/tiktok.svg"><source media="(prefers-color-scheme: light)" srcset="assets/badges/tiktok-light.svg"><img src="assets/badges/tiktok.svg" alt="TikTok @ixbossss" width="240"></picture></a>&nbsp;
+  <a href="https://www.instagram.com/ixbosss"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/badges/instagram.svg"><source media="(prefers-color-scheme: light)" srcset="assets/badges/instagram-light.svg"><img src="assets/badges/instagram.svg" alt="Instagram @ixbosss" width="240"></picture></a>
 </p>
 
 <p align="center">

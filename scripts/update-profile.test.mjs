@@ -508,20 +508,36 @@ describe('SVG XML escaping, verbatim bio, and strict exclusion invariants', () =
 });
 
 describe('live profile audit fixes — hero specular sweep, Arabic vector path, LinkedIn, deduplicated headers, live language', () => {
-  it('renders solid high-contrast BOSS wordmark with clipped diagonal specular sweep (no rainbow gradient)', () => {
+  it('renders high-contrast metallic BOSS wordmark with clipped 3.2s diagonal specular sweep and synced underline pulse (no rainbow gradient)', () => {
     const darkHero = renderHeroSvg({ theme: 'dark', bio: VERBATIM_BIO, portfolioUrl: PORTFOLIO_URL });
     const lightHero = renderHeroSvg({ theme: 'light', bio: VERBATIM_BIO, portfolioUrl: PORTFOLIO_URL });
 
-    assert.match(darkHero, /fill="#FFFFFF"[^>]*>BOSS<\/text>/);
+    assert.match(darkHero, /id="bossBaseDark"/);
+    assert.match(darkHero, /stop-color="#E2E8F0"/);
+    assert.match(darkHero, /stop-color="#94A3B8"/);
+    assert.match(darkHero, /fill="url\(#bossBaseDark\)"[^>]*>BOSS<\/text>/);
     assert.match(lightHero, /fill="#0F172A"[^>]*>BOSS<\/text>/);
     assert.match(darkHero, /id="specularDark"/);
+    assert.match(darkHero, /stop-color="#00E5FF" stop-opacity="0\.45"/);
+    assert.match(darkHero, /stop-color="#FFFFFF" stop-opacity="1"/);
+    assert.match(darkHero, /stop-color="#8B5CF6" stop-opacity="0\.45"/);
     assert.match(lightHero, /id="specularLight"/);
+    assert.match(lightHero, /stop-color="#0284C7" stop-opacity="0\.55"/);
+    assert.match(lightHero, /stop-color="#38BDF8" stop-opacity="0\.95"/);
+    assert.match(lightHero, /stop-color="#FFFFFF" stop-opacity="0\.95"/);
+    assert.match(lightHero, /stop-color="#7C3AED" stop-opacity="0\.45"/);
     assert.match(darkHero, /clip-path="url\(#bossWordClipDark\)"/);
     assert.match(lightHero, /clip-path="url\(#bossWordClipLight\)"/);
-    assert.match(darkHero, /transform="skewX\(-24\)"/);
+    assert.match(darkHero, /transform="skewX\(-22\)"/);
+    assert.match(lightHero, /transform="skewX\(-22\)"/);
+    assert.match(darkHero, /clip-path="url\(#underlineClipDark\)"/);
+    assert.match(lightHero, /clip-path="url\(#underlineClipLight\)"/);
+    assert.equal((darkHero.match(/dur="3\.2s"/g) || []).length, 2);
+    assert.equal((lightHero.match(/dur="3\.2s"/g) || []).length, 2);
     assert.doesNotMatch(darkHero, /id="shineDark"/);
     assert.doesNotMatch(lightHero, /id="shineLight"/);
     assert.doesNotMatch(darkHero, /<script|@import/i);
+    assert.doesNotMatch(lightHero, /<script|@import/i);
   });
 
   it('embeds إسلامي as vector <path> outlines with zero raw Arabic <text> nodes in sadaqa-jaria cards', async () => {

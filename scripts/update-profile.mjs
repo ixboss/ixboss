@@ -401,7 +401,7 @@ export function renderHeroSvg({
   const accent = isDark ? '#00E5FF' : '#0284C7';
   const accent2 = isDark ? '#8B5CF6' : '#7C3AED';
   const accentSoft = isDark ? '#38BDF8' : '#0284C7';
-  const wordmarkFill = isDark ? '#FFFFFF' : '#0F172A';
+  const wordmarkFill = isDark ? `url(#bossBase${suffix})` : '#0F172A';
   const primaryText = isDark ? '#F8FAFC' : '#0F172A';
   const mutedText = isDark ? '#94A3B8' : '#475569';
   const auraEnd = isDark ? '#05070B' : '#FFFFFF';
@@ -415,17 +415,45 @@ export function renderHeroSvg({
 
   const wordmarkAttrs = `x="40" y="95" text-rendering="geometricPrecision" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, 'Segoe UI', Arial, sans-serif" font-size="54" font-weight="800" letter-spacing="-2"`;
 
+  const bossBaseDef = isDark
+    ? `    <linearGradient id="bossBase${suffix}" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E2E8F0"/>
+      <stop offset="0.52" stop-color="#CBD5E1"/>
+      <stop offset="1" stop-color="#94A3B8"/>
+    </linearGradient>\n`
+    : '';
+
+  const specularStops = isDark
+    ? `      <stop offset="0" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="0.22" stop-color="#00E5FF" stop-opacity="0.45"/>
+      <stop offset="0.50" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="0.78" stop-color="#8B5CF6" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>`
+    : `      <stop offset="0" stop-color="#0284C7" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#0284C7" stop-opacity="0.55"/>
+      <stop offset="0.38" stop-color="#38BDF8" stop-opacity="0.95"/>
+      <stop offset="0.54" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="0.78" stop-color="#7C3AED" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>`;
+
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 198" width="760" height="198" role="img" aria-label="${escapeXml(`BOSS (@ixboss) — ${safeBio}`)}">
   <defs>
-    <linearGradient id="specular${suffix}" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="0.36" stop-color="#FFFFFF" stop-opacity="${isDark ? '0.20' : '0.14'}"/>
-      <stop offset="0.50" stop-color="#FFFFFF" stop-opacity="${isDark ? '1' : '0.62'}"/>
-      <stop offset="0.64" stop-color="${isDark ? '#E0F2FE' : '#E2E8F0'}" stop-opacity="${isDark ? '0.24' : '0.18'}"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+${bossBaseDef}    <linearGradient id="specular${suffix}" x1="0" y1="0" x2="1" y2="0">
+${specularStops}
     </linearGradient>
     <clipPath id="bossWordClip${suffix}">
       <text ${wordmarkAttrs}>BOSS</text>
+    </clipPath>
+    <linearGradient id="underlinePulse${suffix}" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="${accent}" stop-opacity="0"/>
+      <stop offset="0.28" stop-color="${accent}" stop-opacity="0.72"/>
+      <stop offset="0.50" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="0.72" stop-color="${accent2}" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="${accent2}" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="underlineClip${suffix}">
+      <rect x="42" y="106" width="84" height="3" rx="1.5"/>
+      <rect x="132" y="106" width="28" height="3" rx="1.5"/>
     </clipPath>
     <linearGradient id="horizon${suffix}" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="${accent2}" stop-opacity="0"/>
@@ -473,14 +501,19 @@ export function renderHeroSvg({
       </circle>
       <text x="56" y="37.5" fill="${accentSoft}" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="600" letter-spacing="1.4">[ SYSTEM ONLINE // CAIRO, EGYPT · @IXBOSS ]</text>
 
-      <text ${wordmarkAttrs} fill="${wordmarkFill}" fill-opacity="${isDark ? '0.88' : '1'}">BOSS</text>
+      <text ${wordmarkAttrs} fill="${wordmarkFill}">BOSS</text>
       <g clip-path="url(#bossWordClip${suffix})" aria-hidden="true">
-        <rect x="-40" y="34" width="60" height="72" fill="url(#specular${suffix})" transform="skewX(-24)">
-          <animate attributeName="x" values="-40;-40;280;280" keyTimes="0;0.06;0.34;1" calcMode="spline" keySplines="0 0 1 1;0.23 1 0.32 1;0 0 1 1" dur="5s" repeatCount="indefinite"/>
+        <rect x="-40" y="36" width="68" height="70" fill="url(#specular${suffix})" transform="skewX(-22)">
+          <animate attributeName="x" values="-40;-40;280;280" keyTimes="0;0.04;0.48;1" calcMode="spline" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" dur="3.2s" repeatCount="indefinite"/>
         </rect>
       </g>
-      <rect x="42" y="106" width="84" height="3" rx="1.5" fill="${accent}"/>
-      <rect x="132" y="106" width="28" height="3" rx="1.5" fill="${accent2}"/>
+      <rect x="42" y="106" width="84" height="3" rx="1.5" fill="${accent}" fill-opacity="${isDark ? '0.68' : '0.65'}"/>
+      <rect x="132" y="106" width="28" height="3" rx="1.5" fill="${accent2}" fill-opacity="${isDark ? '0.68' : '0.65'}"/>
+      <g clip-path="url(#underlineClip${suffix})" aria-hidden="true">
+        <rect x="-24" y="105" width="54" height="5" fill="url(#underlinePulse${suffix})">
+          <animate attributeName="x" values="-24;-24;176;176" keyTimes="0;0.04;0.48;1" calcMode="spline" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" dur="3.2s" repeatCount="indefinite"/>
+        </rect>
+      </g>
 
       <text x="40" y="132" fill="${primaryText}" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="${isDark ? '500' : '600'}">Full-Stack &amp; Systems Engineer · Hossam</text>
       <text x="40" y="152" fill="${mutedText}" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="400">${escapeXml(safeBio)}</text>

@@ -8,7 +8,9 @@ import {
   MANIFEST_URL,
   VERBATIM_BIO,
   PORTFOLIO_URL,
+  LINKEDIN_URL,
   STAR_BADGE_THRESHOLD,
+  ARABIC_ISLAMI_PATH,
   escapeXml,
   loadManifest,
   fetchGitHubData,
@@ -16,8 +18,10 @@ import {
   resolveBuildingNow,
   renderHeroSvg,
   renderBuildingNowSvg,
+  renderStackSvg,
   renderEsportsSvg,
   renderPortfolioBadgeSvg,
+  renderLinkedinBadgeSvg,
   renderProjectCardSvg,
   renderBuildingSection,
   renderProjectsSection,
@@ -446,10 +450,14 @@ describe('SVG XML escaping, verbatim bio, and strict exclusion invariants', () =
       renderHeroSvg({ theme: 'light', bio: manifest.bio, stats: { live: false, projectCount: resolved.length }, portfolioUrl: PORTFOLIO_URL }),
       renderBuildingNowSvg({ theme: 'dark', buildingNow }),
       renderBuildingNowSvg({ theme: 'light', buildingNow }),
+      renderStackSvg({ theme: 'dark' }),
+      renderStackSvg({ theme: 'light' }),
       renderEsportsSvg({ theme: 'dark' }),
       renderEsportsSvg({ theme: 'light' }),
       renderPortfolioBadgeSvg({ theme: 'dark' }),
       renderPortfolioBadgeSvg({ theme: 'light' }),
+      renderLinkedinBadgeSvg({ theme: 'dark' }),
+      renderLinkedinBadgeSvg({ theme: 'light' }),
       ...resolved.flatMap((project) => [
         renderProjectCardSvg({ theme: 'dark', project }),
         renderProjectCardSvg({ theme: 'light', project }),
@@ -496,5 +504,90 @@ describe('SVG XML escaping, verbatim bio, and strict exclusion invariants', () =
     assert.match(pass1, /assets\/building-now\.svg/);
     assert.match(pass1, /assets\/projects\/sadaqa-jaria\.svg/);
     assert.match(pass1, /Footer$/);
+  });
+});
+
+describe('live profile audit fixes — hero specular sweep, Arabic vector path, LinkedIn, deduplicated headers, live language', () => {
+  it('renders solid high-contrast BOSS wordmark with clipped diagonal specular sweep (no rainbow gradient)', () => {
+    const darkHero = renderHeroSvg({ theme: 'dark', bio: VERBATIM_BIO, portfolioUrl: PORTFOLIO_URL });
+    const lightHero = renderHeroSvg({ theme: 'light', bio: VERBATIM_BIO, portfolioUrl: PORTFOLIO_URL });
+
+    assert.match(darkHero, /fill="#FFFFFF"[^>]*>BOSS<\/text>/);
+    assert.match(lightHero, /fill="#0F172A"[^>]*>BOSS<\/text>/);
+    assert.match(darkHero, /id="specularDark"/);
+    assert.match(lightHero, /id="specularLight"/);
+    assert.match(darkHero, /clip-path="url\(#bossWordClipDark\)"/);
+    assert.match(lightHero, /clip-path="url\(#bossWordClipLight\)"/);
+    assert.match(darkHero, /transform="skewX\(-24\)"/);
+    assert.doesNotMatch(darkHero, /id="shineDark"/);
+    assert.doesNotMatch(lightHero, /id="shineLight"/);
+    assert.doesNotMatch(darkHero, /<script|@import/i);
+  });
+
+  it('embeds إسلامي as vector <path> outlines with zero raw Arabic <text> nodes in sadaqa-jaria cards', async () => {
+    const manifest = await readFallbackManifest();
+    const resolved = resolveProjects(manifest, []);
+    const sadaqa = resolved.find((p) => p.slug === 'sadaqa-jaria');
+    assert.ok(sadaqa);
+
+    for (const theme of ['dark', 'light']) {
+      const svg = renderProjectCardSvg({ theme, project: sadaqa });
+      assert.ok(svg.includes(ARABIC_ISLAMI_PATH), `Missing vector path in ${theme} sadaqa-jaria SVG`);
+      assert.match(svg, /aria-label="[^"]*إسلامي/);
+      assert.match(svg, />· Islami<\/text>/);
+      // Ensure no <text> element contains Arabic code points
+      const textNodes = [...svg.matchAll(/<text\b[^>]*>([\s\S]*?)<\/text>/g)].map((m) => m[1]);
+      for (const content of textNodes) {
+        assert.doesNotMatch(content, /[\u0600-\u06FF]/, `Found raw Arabic in <text>: ${content}`);
+      }
+    }
+  });
+
+  it('prefers live GitHub repo.language over static fallback language for public repos (Kotlin for universal-harness)', async () => {
+    const manifest = await readFallbackManifest();
+    const liveRepos = [
+      {
+        name: 'universal-harness',
+        stargazers_count: 0,
+        language: 'Kotlin',
+        html_url: 'https://github.com/ixboss/universal-harness',
+        pushed_at: '2026-11-25T10:00:00Z',
+        fork: false,
+        archived: false,
+        private: false,
+      },
+    ];
+
+    const resolvedLive = resolveProjects(manifest, liveRepos);
+    const harnessLive = resolvedLive.find((p) => p.slug === 'universal-harness');
+    assert.equal(harnessLive.primaryTech, 'Kotlin');
+    assert.equal(harnessLive.pillLabel, 'Kotlin · Active');
+
+    const harnessSvg = renderProjectCardSvg({ theme: 'dark', project: harnessLive });
+    assert.match(harnessSvg, />Kotlin · Active<\/text>/);
+
+    // Offline fallback still resolves cleanly to manifest language
+    const resolvedOffline = resolveProjects(manifest, []);
+    const harnessOffline = resolvedOffline.find((p) => p.slug === 'universal-harness');
+    assert.equal(harnessOffline.primaryTech, 'TypeScript');
+  });
+
+  it('omits duplicate section titles inside stack and esports SVGs and provides LinkedIn badge', async () => {
+    for (const theme of ['dark', 'light']) {
+      const stackSvg = renderStackSvg({ theme });
+      const esportsSvg = renderEsportsSvg({ theme });
+      const linkedinSvg = renderLinkedinBadgeSvg({ theme });
+
+      assert.doesNotMatch(stackSvg, /\[\s*02\s*—\s*TECH CONSTELLATION\s*\]/);
+      assert.doesNotMatch(esportsSvg, /\[\s*03\s*—\s*BEYOND CODE \/\/ ESPORTS\s*\]/);
+      assert.match(linkedinSvg, /LinkedIn/);
+      assert.match(linkedinSvg, /Hossam Mohamed/);
+    }
+
+    const readme = await fs.readFile(path.resolve(__dirname, '../README.md'), 'utf8');
+    assert.ok(readme.includes(LINKEDIN_URL));
+    assert.match(readme, /assets\/badges\/linkedin\.svg/);
+    assert.doesNotMatch(readme, /assets\/badges\/github\.svg/);
+    assert.doesNotMatch(readme, /GitHub @ixboss/);
   });
 });

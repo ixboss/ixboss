@@ -10,8 +10,8 @@
 
 <p align="center">
   <a href="https://ixboss.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/badges/portfolio.svg"><source media="(prefers-color-scheme: light)" srcset="assets/badges/portfolio-light.svg"><img src="assets/badges/portfolio.svg" alt="Portfolio ixboss.vercel.app" width="240"></picture></a>&nbsp;
-  <a href="mailto:hossam.m.ghareeb@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/badges/email.svg"><source media="(prefers-color-scheme: light)" srcset="assets/badges/email-light.svg"><img src="assets/badges/email.svg" alt="Email hossam.m.ghareeb" width="240"></picture></a>&nbsp;
-  <a href="https://github.com/ixboss?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/badges/github.svg"><source media="(prefers-color-scheme: light)" srcset="assets/badges/github-light.svg"><img src="assets/badges/github.svg" alt="GitHub @ixboss" width="240"></picture></a>
+  <a href="https://www.linkedin.com/in/hossam-mohamed-7932b0379"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/badges/linkedin.svg"><source media="(prefers-color-scheme: light)" srcset="assets/badges/linkedin-light.svg"><img src="assets/badges/linkedin.svg" alt="LinkedIn Hossam Mohamed" width="240"></picture></a>&nbsp;
+  <a href="mailto:hossam.m.ghareeb@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/badges/email.svg"><source media="(prefers-color-scheme: light)" srcset="assets/badges/email-light.svg"><img src="assets/badges/email.svg" alt="Email hossam.m.ghareeb" width="240"></picture></a>
 </p>
 
 <!-- AUTO:BUILDING:START -->

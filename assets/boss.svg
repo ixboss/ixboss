@@ -1,21 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 198" width="760" height="198" role="img" aria-label="BOSS (@ixboss) — Just some nerd who loves to play with everything he sees.">
   <defs>
-    <linearGradient id="shineDark" x1="-0.4" y1="0" x2="0" y2="0">
-      <stop offset="0" stop-color="#F8FAFC"/>
-      <stop offset="0.45" stop-color="#00E5FF"/>
-      <stop offset="0.55" stop-color="#8B5CF6"/>
-      <stop offset="1" stop-color="#F8FAFC"/>
-      <animate attributeName="x1" values="-0.4;1" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0;1.4" dur="6s" repeatCount="indefinite"/>
+    <linearGradient id="specularDark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.36" stop-color="#FFFFFF" stop-opacity="0.20"/>
+      <stop offset="0.50" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="0.64" stop-color="#E0F2FE" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
+    <clipPath id="bossWordClipDark">
+      <text x="40" y="95" text-rendering="geometricPrecision" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, 'Segoe UI', Arial, sans-serif" font-size="54" font-weight="800" letter-spacing="-2">BOSS</text>
+    </clipPath>
     <linearGradient id="horizonDark" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#8B5CF6" stop-opacity="0"/>
       <stop offset="0.5" stop-color="#00E5FF" stop-opacity="0.85"/>
       <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
     </linearGradient>
-    <radialGradient id="auraDark" cx="76%" cy="22%" r="48%">
-      <stop offset="0" stop-color="#00E5FF" stop-opacity="0.16"/>
-      <stop offset="0.55" stop-color="#8B5CF6" stop-opacity="0.08"/>
+    <radialGradient id="auraDark" cx="78%" cy="22%" r="48%">
+      <stop offset="0" stop-color="#00E5FF" stop-opacity="0.12"/>
+      <stop offset="0.55" stop-color="#8B5CF6" stop-opacity="0.06"/>
       <stop offset="1" stop-color="#05070B" stop-opacity="0"/>
     </radialGradient>
     <clipPath id="heroClipDark"><rect x="0.6" y="0.6" width="758.8" height="196.8" rx="14"/></clipPath>
@@ -25,7 +27,7 @@
 
   <g clip-path="url(#heroClipDark)">
     <rect x="0" y="0" width="760" height="198" fill="url(#auraDark)"/>
-    <g stroke="#38BDF8" stroke-opacity="0.05" stroke-width="1">
+    <g stroke="#38BDF8" stroke-opacity="0.045" stroke-width="1">
       <line x1="190" y1="0" x2="190" y2="198"/>
       <line x1="380" y1="0" x2="380" y2="198"/>
       <line x1="570" y1="0" x2="570" y2="198"/>
@@ -35,29 +37,16 @@
 
     <path d="M 120 0 Q 380 42 640 0" fill="none" stroke="url(#horizonDark)" stroke-width="1.4"/>
 
-    <g>
-      <circle cx="150" cy="155" r="1.4" fill="#00E5FF" opacity="0.16">
-        <animate attributeName="cy" values="184;18" dur="22s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0.22;0" dur="22s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="430" cy="34" r="1.2" fill="#8B5CF6" opacity="0.15">
-        <animate attributeName="cy" values="188;22" dur="28s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0.18;0" dur="28s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="600" cy="130" r="1.6" fill="#00E5FF" opacity="0.15">
-        <animate attributeName="cy" values="184;20" dur="25s" begin="5s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0.20;0" dur="25s" begin="5s" repeatCount="indefinite"/>
-      </circle>
-    </g>
-
-    <g transform="translate(658, 76)" opacity="0.88">
+    <g transform="translate(658, 76)" opacity="0.9">
+      <line x1="-44" y1="0" x2="44" y2="0" stroke="#18273A" stroke-opacity="0.55" stroke-width="0.9"/>
+      <line x1="0" y1="-44" x2="0" y2="44" stroke="#18273A" stroke-opacity="0.55" stroke-width="0.9"/>
       <circle cx="0" cy="0" r="38" fill="none" stroke="#18273A" stroke-width="1"/>
-      <circle cx="0" cy="0" r="26" fill="none" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="4 4">
+      <circle cx="0" cy="0" r="26" fill="none" stroke="#38BDF8" stroke-opacity="0.38" stroke-width="1" stroke-dasharray="4 4">
         <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="28s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="0" cy="0" r="15" fill="none" stroke="#00E5FF" stroke-opacity="0.7" stroke-width="1.2"/>
-      <circle cx="0" cy="0" r="5.5" fill="#00E5FF" opacity="0.9">
-        <animate attributeName="opacity" values="0.6;1;0.6" dur="3.6s" repeatCount="indefinite"/>
+      <circle cx="0" cy="0" r="14" fill="none" stroke="#00E5FF" stroke-opacity="0.72" stroke-width="1.2"/>
+      <circle cx="0" cy="0" r="4.5" fill="#00E5FF" opacity="0.92">
+        <animate attributeName="opacity" values="0.65;1;0.65" dur="3.6s" repeatCount="indefinite"/>
       </circle>
     </g>
 
@@ -67,7 +56,12 @@
       </circle>
       <text x="56" y="37.5" fill="#38BDF8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="600" letter-spacing="1.4">[ SYSTEM ONLINE // CAIRO, EGYPT · @IXBOSS ]</text>
 
-      <text x="40" y="94" fill="url(#shineDark)" text-rendering="geometricPrecision" font-family="'Space Grotesk', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="52" font-weight="800" letter-spacing="-1.5">BOSS</text>
+      <text x="40" y="95" text-rendering="geometricPrecision" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, 'Segoe UI', Arial, sans-serif" font-size="54" font-weight="800" letter-spacing="-2" fill="#FFFFFF" fill-opacity="0.88">BOSS</text>
+      <g clip-path="url(#bossWordClipDark)" aria-hidden="true">
+        <rect x="-40" y="34" width="60" height="72" fill="url(#specularDark)" transform="skewX(-24)">
+          <animate attributeName="x" values="-40;-40;280;280" keyTimes="0;0.06;0.34;1" calcMode="spline" keySplines="0 0 1 1;0.23 1 0.32 1;0 0 1 1" dur="5s" repeatCount="indefinite"/>
+        </rect>
+      </g>
       <rect x="42" y="106" width="84" height="3" rx="1.5" fill="#00E5FF"/>
       <rect x="132" y="106" width="28" height="3" rx="1.5" fill="#8B5CF6"/>
 

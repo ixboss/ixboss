@@ -1,24 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 198" width="760" height="198" role="img" aria-label="Tech Constellation — Frontend and Motion, Systems and Native, Mobile and Media, Backend PWA and DevOps">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 172" width="760" height="172" role="img" aria-label="Tech Constellation — Frontend and Motion, Systems and Native, Mobile and Media, Backend PWA and DevOps">
   <defs>
     <linearGradient id="stackBeamL" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#0284C7" stop-opacity="0"/>
       <stop offset="0.5" stop-color="#0284C7"/>
       <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
     </linearGradient>
-    <clipPath id="stackClipL"><rect x="0.6" y="0.6" width="758.8" height="196.8" rx="14"/></clipPath>
+    <clipPath id="stackClipL"><rect x="0.6" y="0.6" width="758.8" height="170.8" rx="14"/></clipPath>
   </defs>
 
-  <rect x="0.6" y="0.6" width="758.8" height="196.8" rx="14" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+  <rect x="0.6" y="0.6" width="758.8" height="170.8" rx="14" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
 
   <g clip-path="url(#stackClipL)">
     <rect x="-160" y="0.8" width="160" height="1.5" fill="url(#stackBeamL)">
       <animate attributeName="x" values="-160;760" dur="10s" repeatCount="indefinite"/>
     </rect>
 
-    <text x="24" y="30" fill="#0284C7" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="600" letter-spacing="1.4">[ 02 — TECH CONSTELLATION ]</text>
-    <text x="736" y="30" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" letter-spacing="1">4 DOMAINS // PRODUCTION STACK</text>
-
-    <g transform="translate(24, 46)">
+    <g transform="translate(24, 20)">
       <rect x="0" y="0" width="170" height="132" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
       <text x="14" y="22" fill="#0284C7" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="9.5" font-weight="600" letter-spacing="1">01 // FRONTEND</text>
       <text x="14" y="42" fill="#0F172A" font-family="'Space Grotesk', Inter, Arial, sans-serif" font-size="13.5" font-weight="700">Frontend &amp; Motion</text>
@@ -28,7 +25,7 @@
       <text x="14" y="118" fill="#475569" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10.5">Lenis · Three.js</text>
     </g>
 
-    <g transform="translate(204, 46)">
+    <g transform="translate(204, 20)">
       <rect x="0" y="0" width="170" height="132" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
       <text x="14" y="22" fill="#0369A1" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="9.5" font-weight="600" letter-spacing="1">02 // SYSTEMS</text>
       <text x="14" y="42" fill="#0F172A" font-family="'Space Grotesk', Inter, Arial, sans-serif" font-size="13.5" font-weight="700">Systems &amp; Native</text>
@@ -38,7 +35,7 @@
       <text x="14" y="118" fill="#475569" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10.5">LAN TLS · USB Bridge</text>
     </g>
 
-    <g transform="translate(384, 46)">
+    <g transform="translate(384, 20)">
       <rect x="0" y="0" width="170" height="132" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
       <text x="14" y="22" fill="#7C3AED" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="9.5" font-weight="600" letter-spacing="1">03 // MOBILE</text>
       <text x="14" y="42" fill="#0F172A" font-family="'Space Grotesk', Inter, Arial, sans-serif" font-size="13.5" font-weight="700">Mobile &amp; Media</text>
@@ -48,7 +45,7 @@
       <text x="14" y="118" fill="#475569" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10.5">Capacitor · Liquid UI</text>
     </g>
 
-    <g transform="translate(564, 46)">
+    <g transform="translate(564, 20)">
       <rect x="0" y="0" width="172" height="132" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
       <text x="14" y="22" fill="#0284C7" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="9.5" font-weight="600" letter-spacing="1">04 // PWA &amp; CI</text>
       <text x="14" y="42" fill="#0F172A" font-family="'Space Grotesk', Inter, Arial, sans-serif" font-size="13.5" font-weight="700">PWA &amp; DevOps</text>

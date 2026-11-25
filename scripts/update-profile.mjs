@@ -5,11 +5,18 @@ import { fileURLToPath } from 'node:url';
 export const GITHUB_USERNAME = 'ixboss';
 export const PORTFOLIO_URL = 'https://ixboss.vercel.app';
 export const PORTFOLIO_DISPLAY = 'ixboss.vercel.app';
+export const LINKEDIN_URL = 'https://www.linkedin.com/in/hossam-mohamed-7932b0379';
 export const MANIFEST_URL = 'https://ixboss.vercel.app/api/projects';
 export const VERBATIM_BIO =
   'Just some nerd who loves to play with everything he sees.';
 export const STAR_BADGE_THRESHOLD = 5;
 export const FETCH_TIMEOUT_MS = 8000;
+
+// HarfBuzz/PangoCairo-shaped RTL vector outline for "إسلامي" (Noto Sans Arabic Bold 19px).
+// Normalized to left edge x=0, typographic baseline y=0 (width=61.66, top=-14, bottom=8.66).
+export const ARABIC_ISLAMI_WIDTH = 61.66;
+export const ARABIC_ISLAMI_PATH =
+  'M0 -0.77C0 -1.19 0.05 -1.72 0.17 -2.36C0.3 -3 0.57 -3.77 0.98 -4.67L3.31 -3.86C3.1 -3.3 2.94 -2.81 2.83 -2.41C2.71 -2.01 2.66 -1.62 2.66 -1.23C2.66 -0.44 3.01 0.18 3.72 0.64C4.44 1.11 5.47 1.34 6.81 1.34C8.21 1.34 9.3 1.22 10.09 0.98C10.88 0.75 11.28 0.41 11.28 -0.05C11.28 -0.24 11.1 -0.44 10.75 -0.62C10.41 -0.82 9.81 -1.05 8.97 -1.33L9.59 -4C10.68 -3.55 11.66 -3.21 12.53 -2.98C13.41 -2.77 14.2 -2.66 14.89 -2.66C15.37 -2.66 15.71 -2.53 15.91 -2.28C16.11 -2.04 16.22 -1.73 16.22 -1.36C16.22 -0.97 16.08 -0.65 15.81 -0.39C15.55 -0.13 15.18 0 14.7 0L13.83 0C13.85 0.11 13.86 0.21 13.86 0.3C13.86 0.39 13.86 0.48 13.86 0.56C13.86 0.96 13.72 1.35 13.44 1.75C13.16 2.16 12.71 2.52 12.11 2.86C11.52 3.2 10.76 3.48 9.84 3.69C8.93 3.89 7.83 4 6.56 4C4.5 4 2.89 3.61 1.73 2.84C0.58 2.07 0 0.87 0 -0.77ZM8.44 8.66C8.06 8.66 7.74 8.52 7.48 8.27C7.22 8 7.09 7.7 7.09 7.34C7.09 6.98 7.22 6.66 7.48 6.39C7.74 6.13 8.06 6 8.44 6C8.79 6 9.09 6.13 9.34 6.39C9.59 6.66 9.72 6.98 9.72 7.34C9.72 7.7 9.59 8 9.34 8.27C9.09 8.52 8.79 8.66 8.44 8.66ZM5.14 8.66C4.77 8.66 4.46 8.52 4.2 8.27C3.94 8 3.81 7.7 3.81 7.34C3.81 6.98 3.94 6.66 4.2 6.39C4.46 6.13 4.77 6 5.14 6C5.49 6 5.8 6.13 6.05 6.39C6.3 6.66 6.44 6.98 6.44 7.34C6.44 7.7 6.3 8 6.05 8.27C5.8 8.52 5.49 8.66 5.14 8.66ZM14.5 0L14.69 -2.56C14.98 -2.56 15.23 -2.63 15.44 -2.78C15.64 -2.93 15.86 -3.18 16.09 -3.53C16.32 -3.88 16.59 -4.36 16.89 -4.97C17.46 -6.13 18.07 -6.93 18.72 -7.36C19.36 -7.79 20.02 -8 20.67 -8C21.42 -8 22.09 -7.79 22.69 -7.36C23.28 -6.94 23.75 -6.39 24.09 -5.72C24.44 -5.05 24.61 -4.34 24.61 -3.58C24.61 -2.91 24.46 -2.3 24.17 -1.77C23.89 -1.22 23.5 -0.79 23 -0.47C22.5 -0.16 21.93 0 21.28 0C20.8 0 20.25 -0.07 19.62 -0.2C19.01 -0.35 18.36 -0.64 17.67 -1.08C17.27 -0.67 16.84 -0.39 16.36 -0.23C15.88 -0.08 15.26 0 14.5 0ZM20.59 -5.34C20.23 -5.34 19.94 -5.15 19.72 -4.77C19.51 -4.39 19.26 -3.89 18.97 -3.27C19.35 -3.02 19.71 -2.83 20.05 -2.72C20.39 -2.61 20.68 -2.56 20.92 -2.56C21.3 -2.56 21.57 -2.62 21.75 -2.75C21.94 -2.88 22.03 -3.1 22.03 -3.39C22.03 -3.68 21.96 -3.97 21.83 -4.27C21.7 -4.55 21.54 -4.8 21.33 -5.02C21.12 -5.23 20.88 -5.34 20.59 -5.34ZM28.2 0C27.86 0 27.51 -0.02 27.16 -0.08C26.81 -0.14 26.57 -0.18 26.44 -0.2L26.8 -2.95C27.7 -2.82 28.59 -2.79 29.45 -2.88C30.32 -2.96 31.08 -3.2 31.73 -3.59C31.21 -4.35 30.49 -5.26 29.56 -6.31C28.63 -7.36 27.54 -8.48 26.27 -9.67L27.91 -11.47C29.02 -10.41 29.94 -9.5 30.66 -8.77C31.38 -8.02 31.97 -7.4 32.41 -6.89C32.84 -6.39 33.19 -5.95 33.44 -5.58C33.66 -6.14 33.77 -6.77 33.77 -7.47L33.52 -14L36.17 -14L36.58 -4.7C36.6 -4.13 36.66 -3.7 36.77 -3.41C36.87 -3.11 37.06 -2.91 37.34 -2.81C37.63 -2.71 38.05 -2.66 38.61 -2.66C39.09 -2.66 39.43 -2.53 39.64 -2.28C39.85 -2.04 39.95 -1.73 39.95 -1.36C39.95 -0.97 39.82 -0.65 39.55 -0.39C39.29 -0.13 38.91 0 38.42 0C37.42 0 36.62 -0.08 36.02 -0.25C35.41 -0.43 34.95 -0.69 34.64 -1.05C34.34 -1.41 34.13 -1.86 34.03 -2.41C33.68 -1.85 33.25 -1.41 32.75 -1.08C32.26 -0.75 31.74 -0.52 31.2 -0.36C30.66 -0.2 30.13 -0.1 29.61 -0.06C29.09 -0.02 28.62 0 28.2 0ZM38.5 0L38.69 -2.66C39.1 -2.66 39.44 -2.69 39.7 -2.77C39.97 -2.84 40.19 -2.99 40.36 -3.23C40.54 -3.48 40.69 -3.86 40.83 -4.36C40.96 -4.86 41.11 -5.54 41.28 -6.41L43.75 -5.95C43.7 -5.67 43.63 -5.32 43.55 -4.91C43.46 -4.49 43.42 -4.12 43.42 -3.81C43.42 -3.46 43.54 -3.18 43.77 -2.97C43.99 -2.76 44.43 -2.66 45.06 -2.66C45.38 -2.66 45.64 -2.69 45.88 -2.77C46.11 -2.84 46.32 -2.99 46.48 -3.23C46.66 -3.48 46.81 -3.87 46.94 -4.39C47.07 -4.92 47.2 -5.63 47.33 -6.53L49.84 -6.14C49.77 -5.69 49.69 -5.22 49.61 -4.72C49.54 -4.23 49.5 -3.86 49.5 -3.61C49.5 -3.37 49.61 -3.15 49.84 -2.95C50.08 -2.75 50.56 -2.66 51.28 -2.66C51.79 -2.66 52.19 -2.75 52.48 -2.95C52.79 -3.16 52.94 -3.52 52.94 -4.03C52.94 -4.5 52.83 -5.11 52.61 -5.88C52.4 -6.63 52.15 -7.43 51.86 -8.27L54.53 -9.06C54.74 -8.52 54.92 -7.94 55.08 -7.33C55.23 -6.71 55.36 -6.11 55.45 -5.53C55.55 -4.96 55.59 -4.46 55.59 -4.03C55.59 -2.72 55.21 -1.72 54.44 -1.03C53.68 -0.34 52.68 0 51.45 0C50.57 0 49.88 -0.1 49.38 -0.31C48.88 -0.52 48.54 -0.89 48.33 -1.44C48.07 -1 47.79 -0.68 47.48 -0.47C47.19 -0.27 46.84 -0.14 46.44 -0.08C46.03 -0.02 45.55 0 45 0C44.66 0 44.31 -0.02 43.97 -0.08C43.62 -0.14 43.3 -0.26 42.98 -0.44C42.68 -0.62 42.41 -0.92 42.19 -1.33C41.76 -0.74 41.23 -0.38 40.61 -0.22C39.98 -0.07 39.28 0 38.5 0ZM58.02 -0.09L57.62 -14L60.28 -14L60.69 -0.09ZM57.91 5.83L57.58 4.5C57.98 4.41 58.3 4.35 58.55 4.3C58.32 4.14 58.12 3.93 57.95 3.66C57.8 3.39 57.72 3.1 57.72 2.78C57.72 2.32 57.82 1.95 58.02 1.67C58.22 1.4 58.48 1.2 58.8 1.08C59.12 0.95 59.45 0.89 59.78 0.89C60.16 0.89 60.49 0.94 60.8 1.05L60.64 2.41C60.52 2.38 60.39 2.35 60.27 2.33C60.14 2.3 60 2.3 59.84 2.3C59.68 2.3 59.52 2.35 59.39 2.45C59.27 2.55 59.2 2.69 59.2 2.84C59.2 3.09 59.3 3.3 59.52 3.48C59.72 3.67 59.93 3.8 60.14 3.89C60.55 3.77 60.92 3.64 61.27 3.5L61.66 4.78C61.16 4.96 60.58 5.14 59.89 5.34C59.2 5.54 58.54 5.7 57.91 5.83Z';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -229,7 +236,11 @@ export function resolveProjects(manifest, liveRepos = []) {
       : liveRepo?.language
         ? [liveRepo.language]
         : ['Engineering'];
-    const primaryTech = techList[0].replace(/^Vanilla\s+/i, '');
+    const liveLanguage =
+      !isPrivate && typeof liveRepo?.language === 'string' && liveRepo.language.trim()
+        ? liveRepo.language.trim()
+        : null;
+    const primaryTech = liveLanguage || techList[0].replace(/^Vanilla\s+/i, '');
 
     const project = {
       slug,
@@ -390,7 +401,7 @@ export function renderHeroSvg({
   const accent = isDark ? '#00E5FF' : '#0284C7';
   const accent2 = isDark ? '#8B5CF6' : '#7C3AED';
   const accentSoft = isDark ? '#38BDF8' : '#0284C7';
-  const titleBase = isDark ? '#F8FAFC' : '#05070B';
+  const wordmarkFill = isDark ? '#FFFFFF' : '#0F172A';
   const primaryText = isDark ? '#F8FAFC' : '#0F172A';
   const mutedText = isDark ? '#94A3B8' : '#475569';
   const auraEnd = isDark ? '#05070B' : '#FFFFFF';
@@ -402,24 +413,28 @@ export function renderHeroSvg({
     ? `${stats.publicRepos} Public Repos · ★ ${stats.totalStars} Stars`
     : `${stats?.projectCount ?? 4} Featured Projects · Cairo, EG`;
 
+  const wordmarkAttrs = `x="40" y="95" text-rendering="geometricPrecision" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, 'Segoe UI', Arial, sans-serif" font-size="54" font-weight="800" letter-spacing="-2"`;
+
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 198" width="760" height="198" role="img" aria-label="${escapeXml(`BOSS (@ixboss) — ${safeBio}`)}">
   <defs>
-    <linearGradient id="shine${suffix}" x1="-0.4" y1="0" x2="0" y2="0">
-      <stop offset="0" stop-color="${titleBase}"/>
-      <stop offset="0.45" stop-color="${accent}"/>
-      <stop offset="0.55" stop-color="${accent2}"/>
-      <stop offset="1" stop-color="${titleBase}"/>
-      <animate attributeName="x1" values="-0.4;1" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0;1.4" dur="6s" repeatCount="indefinite"/>
+    <linearGradient id="specular${suffix}" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.36" stop-color="#FFFFFF" stop-opacity="${isDark ? '0.20' : '0.14'}"/>
+      <stop offset="0.50" stop-color="#FFFFFF" stop-opacity="${isDark ? '1' : '0.62'}"/>
+      <stop offset="0.64" stop-color="${isDark ? '#E0F2FE' : '#E2E8F0'}" stop-opacity="${isDark ? '0.24' : '0.18'}"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
+    <clipPath id="bossWordClip${suffix}">
+      <text ${wordmarkAttrs}>BOSS</text>
+    </clipPath>
     <linearGradient id="horizon${suffix}" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="${accent2}" stop-opacity="0"/>
       <stop offset="0.5" stop-color="${accent}" stop-opacity="${isDark ? '0.85' : '0.65'}"/>
       <stop offset="1" stop-color="${accent2}" stop-opacity="0"/>
     </linearGradient>
-    <radialGradient id="aura${suffix}" cx="76%" cy="22%" r="48%">
-      <stop offset="0" stop-color="${accent}" stop-opacity="${isDark ? '0.16' : '0.10'}"/>
-      <stop offset="0.55" stop-color="${accent2}" stop-opacity="${isDark ? '0.08' : '0.06'}"/>
+    <radialGradient id="aura${suffix}" cx="78%" cy="22%" r="48%">
+      <stop offset="0" stop-color="${accent}" stop-opacity="${isDark ? '0.12' : '0.08'}"/>
+      <stop offset="0.55" stop-color="${accent2}" stop-opacity="${isDark ? '0.06' : '0.04'}"/>
       <stop offset="1" stop-color="${auraEnd}" stop-opacity="0"/>
     </radialGradient>
     <clipPath id="heroClip${suffix}"><rect x="0.6" y="0.6" width="758.8" height="196.8" rx="14"/></clipPath>
@@ -429,7 +444,7 @@ export function renderHeroSvg({
 
   <g clip-path="url(#heroClip${suffix})">
     <rect x="0" y="0" width="760" height="198" fill="url(#aura${suffix})"/>
-    <g stroke="${gridStroke}" stroke-opacity="${isDark ? '0.05' : '0.06'}" stroke-width="1">
+    <g stroke="${gridStroke}" stroke-opacity="${isDark ? '0.045' : '0.055'}" stroke-width="1">
       <line x1="190" y1="0" x2="190" y2="198"/>
       <line x1="380" y1="0" x2="380" y2="198"/>
       <line x1="570" y1="0" x2="570" y2="198"/>
@@ -439,29 +454,16 @@ export function renderHeroSvg({
 
     <path d="M 120 0 Q 380 42 640 0" fill="none" stroke="url(#horizon${suffix})" stroke-width="1.4"/>
 
-    <g>
-      <circle cx="150" cy="155" r="1.4" fill="${accent}" opacity="0.16">
-        <animate attributeName="cy" values="184;18" dur="22s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0.22;0" dur="22s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="430" cy="34" r="1.2" fill="${accent2}" opacity="0.15">
-        <animate attributeName="cy" values="188;22" dur="28s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0.18;0" dur="28s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="600" cy="130" r="1.6" fill="${accent}" opacity="0.15">
-        <animate attributeName="cy" values="184;20" dur="25s" begin="5s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0.20;0" dur="25s" begin="5s" repeatCount="indefinite"/>
-      </circle>
-    </g>
-
-    <g transform="translate(658, 76)" opacity="0.88">
+    <g transform="translate(658, 76)" opacity="0.9">
+      <line x1="-44" y1="0" x2="44" y2="0" stroke="${border}" stroke-opacity="0.55" stroke-width="0.9"/>
+      <line x1="0" y1="-44" x2="0" y2="44" stroke="${border}" stroke-opacity="0.55" stroke-width="0.9"/>
       <circle cx="0" cy="0" r="38" fill="none" stroke="${border}" stroke-width="1"/>
-      <circle cx="0" cy="0" r="26" fill="none" stroke="${accentSoft}" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="4 4">
+      <circle cx="0" cy="0" r="26" fill="none" stroke="${accentSoft}" stroke-opacity="0.38" stroke-width="1" stroke-dasharray="4 4">
         <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="28s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="0" cy="0" r="15" fill="none" stroke="${accent}" stroke-opacity="0.7" stroke-width="1.2"/>
-      <circle cx="0" cy="0" r="5.5" fill="${accent}" opacity="0.9">
-        <animate attributeName="opacity" values="0.6;1;0.6" dur="3.6s" repeatCount="indefinite"/>
+      <circle cx="0" cy="0" r="14" fill="none" stroke="${accent}" stroke-opacity="0.72" stroke-width="1.2"/>
+      <circle cx="0" cy="0" r="4.5" fill="${accent}" opacity="0.92">
+        <animate attributeName="opacity" values="0.65;1;0.65" dur="3.6s" repeatCount="indefinite"/>
       </circle>
     </g>
 
@@ -471,7 +473,12 @@ export function renderHeroSvg({
       </circle>
       <text x="56" y="37.5" fill="${accentSoft}" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="600" letter-spacing="1.4">[ SYSTEM ONLINE // CAIRO, EGYPT · @IXBOSS ]</text>
 
-      <text x="40" y="94" fill="url(#shine${suffix})" text-rendering="geometricPrecision" font-family="'Space Grotesk', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="52" font-weight="800" letter-spacing="-1.5">BOSS</text>
+      <text ${wordmarkAttrs} fill="${wordmarkFill}" fill-opacity="${isDark ? '0.88' : '1'}">BOSS</text>
+      <g clip-path="url(#bossWordClip${suffix})" aria-hidden="true">
+        <rect x="-40" y="34" width="60" height="72" fill="url(#specular${suffix})" transform="skewX(-24)">
+          <animate attributeName="x" values="-40;-40;280;280" keyTimes="0;0.06;0.34;1" calcMode="spline" keySplines="0 0 1 1;0.23 1 0.32 1;0 0 1 1" dur="5s" repeatCount="indefinite"/>
+        </rect>
+      </g>
       <rect x="42" y="106" width="84" height="3" rx="1.5" fill="${accent}"/>
       <rect x="132" y="106" width="28" height="3" rx="1.5" fill="${accent2}"/>
 
@@ -568,6 +575,117 @@ export function renderPortfolioBadgeSvg({ theme = 'dark' } = {}) {
 </svg>`;
 }
 
+export function renderLinkedinBadgeSvg({ theme = 'dark' } = {}) {
+  const isDark = theme === 'dark';
+  const suffix = isDark ? 'D' : 'L';
+  const bg = isDark ? '#05070B' : '#F8FAFC';
+  const border = isDark ? '#18273A' : '#CBD5E1';
+  const accent = isDark ? '#38BDF8' : '#0284C7';
+  const mutedText = isDark ? '#94A3B8' : '#64748B';
+  const primaryText = isDark ? '#F8FAFC' : '#0F172A';
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 30" width="240" height="30" role="img" aria-label="LinkedIn Hossam Mohamed">
+  <defs>
+    <clipPath id="bLi${suffix}"><rect x="0.5" y="0.5" width="239" height="29" rx="8"/></clipPath>
+  </defs>
+  <rect x="0.5" y="0.5" width="239" height="29" rx="8" fill="${bg}" stroke="${border}" stroke-width="1"/>
+  <g clip-path="url(#bLi${suffix})">
+    <rect x="-60" y="0" width="42" height="30" fill="${accent}" opacity="0.08" transform="skewX(-20)">
+      <animate attributeName="x" values="-60;300" dur="8s" begin="3s" repeatCount="indefinite"/>
+    </rect>
+    <g transform="translate(14, 7) scale(0.667)">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" fill="${accent}"/>
+    </g>
+    <text x="38" y="19" fill="${mutedText}" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10.5" font-weight="500">LinkedIn</text>
+    <text x="102" y="19" fill="${primaryText}" font-family="'Inter', Arial, sans-serif" font-size="11.5" font-weight="600">Hossam Mohamed</text>
+  </g>
+</svg>`;
+}
+
+export function renderStackSvg({ theme = 'dark' } = {}) {
+  const isDark = theme === 'dark';
+  const suffix = isDark ? 'D' : 'L';
+  const bg = isDark ? '#05070B' : '#F8FAFC';
+  const surface = isDark ? '#0B0F17' : '#FFFFFF';
+  const border = isDark ? '#18273A' : '#CBD5E1';
+  const cardBorder = isDark ? '#18273A' : '#E2E8F0';
+  const accent = isDark ? '#00E5FF' : '#0284C7';
+  const accentMid = isDark ? '#38BDF8' : '#0369A1';
+  const accent2 = isDark ? '#8B5CF6' : '#7C3AED';
+  const primaryText = isDark ? '#F8FAFC' : '#0F172A';
+  const mutedText = isDark ? '#94A3B8' : '#475569';
+
+  const columns = [
+    {
+      x: 24,
+      width: 170,
+      kicker: '01 // FRONTEND',
+      kickerColor: accent,
+      title: 'Frontend & Motion',
+      items: ['Next.js · React', 'TypeScript · Tailwind', 'Framer Motion · GSAP', 'Lenis · Three.js'],
+    },
+    {
+      x: 204,
+      width: 170,
+      kicker: '02 // SYSTEMS',
+      kickerColor: accentMid,
+      title: 'Systems & Native',
+      items: ['Swift · IOKit · Kext', 'ACPI / EC0.SFTC', 'Kotlin · Android', 'LAN TLS · USB Bridge'],
+    },
+    {
+      x: 384,
+      width: 170,
+      kicker: '03 // MOBILE',
+      kickerColor: accent2,
+      title: 'Mobile & Media',
+      items: ['Flutter · Dart', 'Media Optimization', 'Ed25519 Licensing', 'Capacitor · Liquid UI'],
+    },
+    {
+      x: 564,
+      width: 172,
+      kicker: '04 // PWA & CI',
+      kickerColor: accent,
+      title: 'PWA & DevOps',
+      items: ['Service Workers', 'Offline-First Core', 'GitHub Actions CI/CD', 'Supabase · WebGL'],
+    },
+  ];
+
+  const colMarkup = columns
+    .map(
+      (col) => `    <g transform="translate(${col.x}, 20)">
+      <rect x="0" y="0" width="${col.width}" height="132" rx="10" fill="${surface}" stroke="${cardBorder}" stroke-width="1"/>
+      <text x="14" y="22" fill="${col.kickerColor}" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="9.5" font-weight="600" letter-spacing="1">${escapeXml(col.kicker)}</text>
+      <text x="14" y="42" fill="${primaryText}" font-family="'Space Grotesk', Inter, Arial, sans-serif" font-size="13.5" font-weight="700">${escapeXml(col.title)}</text>
+      <text x="14" y="64" fill="${mutedText}" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10.5">${escapeXml(col.items[0])}</text>
+      <text x="14" y="82" fill="${mutedText}" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10.5">${escapeXml(col.items[1])}</text>
+      <text x="14" y="100" fill="${mutedText}" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10.5">${escapeXml(col.items[2])}</text>
+      <text x="14" y="118" fill="${mutedText}" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10.5">${escapeXml(col.items[3])}</text>
+    </g>`
+    )
+    .join('\n\n');
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 172" width="760" height="172" role="img" aria-label="Tech Constellation — Frontend and Motion, Systems and Native, Mobile and Media, Backend PWA and DevOps">
+  <defs>
+    <linearGradient id="stackBeam${suffix}" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="${accent}" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="${accent}"/>
+      <stop offset="1" stop-color="${accent2}" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="stackClip${suffix}"><rect x="0.6" y="0.6" width="758.8" height="170.8" rx="14"/></clipPath>
+  </defs>
+
+  <rect x="0.6" y="0.6" width="758.8" height="170.8" rx="14" fill="${bg}" stroke="${border}" stroke-width="1.2"/>
+
+  <g clip-path="url(#stackClip${suffix})">
+    <rect x="-160" y="0.8" width="160" height="1.5" fill="url(#stackBeam${suffix})">
+      <animate attributeName="x" values="-160;760" dur="10s" repeatCount="indefinite"/>
+    </rect>
+
+${colMarkup}
+  </g>
+</svg>`;
+}
+
 export function renderEsportsSvg({ theme = 'dark' } = {}) {
   const isDark = theme === 'dark';
   const suffix = isDark ? 'D' : 'L';
@@ -582,30 +700,28 @@ export function renderEsportsSvg({ theme = 'dark' } = {}) {
   const mutedText = isDark ? '#94A3B8' : '#475569';
   const secondaryText = isDark ? '#CBD5E1' : '#334155';
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 156" width="760" height="156" role="img" aria-label="Beyond Code // Verified Esports Career — Boss (Hossam Mohamed Abdo), PMNC Egypt 2026 Spring Champion">
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 136" width="760" height="136" role="img" aria-label="Verified Esports Career — Boss (Hossam Mohamed Abdo), PMNC Egypt 2026 Spring Champion">
   <defs>
     <linearGradient id="espBeam${suffix}" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="${accent2}" stop-opacity="0"/>
       <stop offset="0.5" stop-color="${accent}"/>
       <stop offset="1" stop-color="${accent2}" stop-opacity="0"/>
     </linearGradient>
-    <clipPath id="espClip${suffix}"><rect x="0.6" y="0.6" width="758.8" height="154.8" rx="14"/></clipPath>
+    <clipPath id="espClip${suffix}"><rect x="0.6" y="0.6" width="758.8" height="134.8" rx="14"/></clipPath>
   </defs>
 
-  <rect x="0.6" y="0.6" width="758.8" height="154.8" rx="14" fill="${bg}" stroke="${border}" stroke-width="1.2"/>
+  <rect x="0.6" y="0.6" width="758.8" height="134.8" rx="14" fill="${bg}" stroke="${border}" stroke-width="1.2"/>
 
   <g clip-path="url(#espClip${suffix})">
     <rect x="-150" y="0.8" width="150" height="1.5" fill="url(#espBeam${suffix})">
       <animate attributeName="x" values="-150;760" dur="10s" begin="1s" repeatCount="indefinite"/>
     </rect>
 
-    <text x="24" y="28" fill="${accentMid}" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10.5" font-weight="600" letter-spacing="1.4">[ 03 — BEYOND CODE // ESPORTS ]</text>
-    <text x="736" y="28" text-anchor="end" fill="${accent}" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="9.5" font-weight="600" letter-spacing="1">VERIFIED ON LIQUIPEDIA ↗</text>
+    <text x="24" y="36" fill="${primaryText}" font-family="'Space Grotesk', Inter, Arial, sans-serif" font-size="18" font-weight="700">Boss</text>
+    <text x="74" y="36" fill="${mutedText}" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400">(Hossam Mohamed Abdo) · Competitive PUBG Mobile</text>
+    <text x="736" y="35" text-anchor="end" fill="${accent}" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="9.5" font-weight="600" letter-spacing="1">VERIFIED ON LIQUIPEDIA ↗</text>
 
-    <text x="24" y="56" fill="${primaryText}" font-family="'Space Grotesk', Inter, Arial, sans-serif" font-size="18" font-weight="700">Boss</text>
-    <text x="74" y="56" fill="${mutedText}" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400">(Hossam Mohamed Abdo) · Competitive PUBG Mobile · Liquipedia Verified</text>
-
-    <g transform="translate(24, 74)">
+    <g transform="translate(24, 52)">
       <rect x="0" y="0" width="230" height="32" rx="8" fill="${surface}" stroke="${accent}" stroke-opacity="${isDark ? '0.45' : '0.5'}" stroke-width="1"/>
       <text x="12" y="20" fill="${accent}" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10.5" font-weight="700">1ST</text>
       <text x="44" y="20" fill="${primaryText}" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="${isDark ? '500' : '600'}">PMNC Egypt 2026 Spring</text>
@@ -619,7 +735,7 @@ export function renderEsportsSvg({ theme = 'dark' } = {}) {
       <text x="526" y="20" fill="${primaryText}" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="${isDark ? '500' : '600'}">PMNC Egypt Spring 2025</text>
     </g>
 
-    <g transform="translate(24, 114)">
+    <g transform="translate(24, 92)">
       <rect x="0" y="0" width="350" height="28" rx="8" fill="${surface}" stroke="${rowBorder}" stroke-width="1"/>
       <text x="12" y="18" fill="${mutedText}" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10" font-weight="600">14TH · A-TIER</text>
       <text x="112" y="18" fill="${secondaryText}" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400">PMGO 2026 Season 1 - MENA Finals</text>
@@ -665,6 +781,22 @@ export function renderProjectCardSvg({ theme = 'dark', project } = {}) {
   const pill = truncateText(project.pillLabel || formatStatusBadge(project), 24);
   const delaySec = ((Number.parseInt(indexLabel, 10) || 1) - 1) * 1.5;
 
+  const hasArabicIslami = title.includes('إسلامي');
+  const titleRemainder = hasArabicIslami ? title.replace('إسلامي', '').trim() : '';
+  const titleMarkup = hasArabicIslami
+    ? [
+        `    <g transform="translate(36, 55.5)" aria-hidden="true">`,
+        `      <path d="${ARABIC_ISLAMI_PATH}" fill="${primaryText}"/>`,
+        `    </g>`,
+        titleRemainder
+          ? `    <text x="${(36 + ARABIC_ISLAMI_WIDTH + 9).toFixed(1)}" y="57" fill="${primaryText}" font-family="'Space Grotesk', Inter, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.3">${escapeXml(titleRemainder)}</text>`
+          : '',
+      ]
+        .filter(Boolean)
+        .join('\n')
+    : `    <text x="36" y="57" fill="${primaryText}" font-family="'Space Grotesk', Inter, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.3">${escapeXml(title)}</text>`;
+  const underlineY = hasArabicIslami ? '68' : '66';
+
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 112" width="760" height="112" role="img" aria-label="${escapeXml(`${indexLabel} ${project.title || project.slug} — ${subtitle}`)}">
   <defs>
     <clipPath id="${idBase}Clip"><rect x="0.5" y="0.5" width="759" height="111" rx="14"/></clipPath>
@@ -680,8 +812,8 @@ export function renderProjectCardSvg({ theme = 'dark', project } = {}) {
       <animate attributeName="x" values="-140;760" dur="9s" begin="${delaySec}s" repeatCount="indefinite"/>
     </rect>
     <text x="36" y="30" fill="${accent}" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="10" font-weight="600" letter-spacing="1.2">${escapeXml(kicker)}</text>
-    <text x="36" y="57" fill="${primaryText}" font-family="'Space Grotesk', Inter, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.3">${escapeXml(title)}</text>
-    <rect x="36" y="66" width="44" height="2.5" rx="1.25" fill="${accent}">
+${titleMarkup}
+    <rect x="36" y="${underlineY}" width="44" height="2.5" rx="1.25" fill="${accent}">
       <animate attributeName="width" values="44;72;44" dur="7s" begin="${delaySec}s" repeatCount="indefinite"/>
     </rect>
     <text x="36" y="92" fill="${mutedText}" font-family="Inter, Arial, sans-serif" font-size="12.5" font-weight="400">${escapeXml(subtitle)}</text>
@@ -825,10 +957,14 @@ export async function runUpdate({
       path.join(assetsDir, 'building-now-light.svg'),
       renderBuildingNowSvg({ theme: 'light', buildingNow }),
     ],
+    [path.join(assetsDir, 'stack.svg'), renderStackSvg({ theme: 'dark' })],
+    [path.join(assetsDir, 'stack-light.svg'), renderStackSvg({ theme: 'light' })],
     [path.join(assetsDir, 'esports.svg'), renderEsportsSvg({ theme: 'dark' })],
     [path.join(assetsDir, 'esports-light.svg'), renderEsportsSvg({ theme: 'light' })],
     [path.join(badgesDir, 'portfolio.svg'), renderPortfolioBadgeSvg({ theme: 'dark' })],
     [path.join(badgesDir, 'portfolio-light.svg'), renderPortfolioBadgeSvg({ theme: 'light' })],
+    [path.join(badgesDir, 'linkedin.svg'), renderLinkedinBadgeSvg({ theme: 'dark' })],
+    [path.join(badgesDir, 'linkedin-light.svg'), renderLinkedinBadgeSvg({ theme: 'light' })],
     ...projects.flatMap((project) => [
       [
         path.join(projectsDir, `${project.slug}.svg`),

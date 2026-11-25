@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/boss.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/boss-light.svg">
-    <img src="assets/boss.svg" alt="BOSS — Just some nerd student who loves to play with everything he sees." width="760">
+    <img src="assets/boss.svg" alt="BOSS — Just some nerd who loves to play with everything he sees." width="760">
   </picture>
 </p>
 

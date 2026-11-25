@@ -5,6 +5,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import {
+  MANIFEST_URL,
   VERBATIM_BIO,
   PORTFOLIO_URL,
   STAR_BADGE_THRESHOLD,
@@ -290,6 +291,94 @@ describe('resolveBuildingNow — hybrid manifest override vs latest public commi
 });
 
 describe('manifest & GitHub graceful fallback behavior', () => {
+  it('targets the live public-safe portfolio API endpoint and preserves local fallback exclude when omitted remotely', async () => {
+    assert.equal(MANIFEST_URL, 'https://ixboss.vercel.app/api/projects');
+
+    const fallback = await readFallbackManifest();
+    const { exclude: _omitted, ...remoteWithoutExclude } = fallback;
+    let requestedUrl = null;
+    const mockFetch = async (url) => {
+      requestedUrl = url;
+      return {
+        ok: true,
+        status: 200,
+        json: async () => remoteWithoutExclude,
+      };
+    };
+
+    const { manifest, source } = await loadManifest({
+      fetchImpl: mockFetch,
+      fallbackPath: FALLBACK_PATH,
+    });
+
+    assert.equal(requestedUrl, 'https://ixboss.vercel.app/api/projects');
+    assert.equal(source, 'remote');
+    assert.deepEqual(manifest.exclude, fallback.exclude);
+
+    const liveRepos = [
+      {
+        name: 'zerodrop',
+        stargazers_count: 99,
+        language: 'TypeScript',
+        description: 'Excluded repo',
+        html_url: 'https://github.com/ixboss/zerodrop',
+        pushed_at: '2026-11-25T23:00:00Z',
+        fork: false,
+        archived: false,
+        private: false,
+      },
+      {
+        name: 'ixboss',
+        stargazers_count: 10,
+        language: null,
+        description: 'Profile repo',
+        html_url: 'https://github.com/ixboss/ixboss',
+        pushed_at: '2026-11-25T22:00:00Z',
+        fork: false,
+        archived: false,
+        private: false,
+      },
+      {
+        name: 'sadaqa-jaria',
+        stargazers_count: 2,
+        language: 'JavaScript',
+        description: 'Offline Quran PWA',
+        html_url: 'https://github.com/ixboss/sadaqa-jaria',
+        pushed_at: '2026-11-24T10:00:00Z',
+        fork: false,
+        archived: false,
+        private: false,
+      },
+    ];
+
+    const resolved = resolveProjects(manifest, liveRepos);
+    const slugs = resolved.map((p) => p.slug);
+    assert.equal(slugs.includes('zerodrop'), false);
+    assert.equal(slugs.includes('ixboss'), false);
+    assert.equal(slugs[0], 'sadaqa-jaria');
+
+    const buildingNow = resolveBuildingNow({ ...manifest, buildingNow: null }, liveRepos);
+    assert.equal(buildingNow.projectSlug, 'sadaqa-jaria');
+  });
+
+  it('uses remote exclude list when remote manifest explicitly provides one', async () => {
+    const fallback = await readFallbackManifest();
+    const customExclude = ['ixboss', 'zerodrop', 'custom-hidden'];
+    const mockFetch = async () => ({
+      ok: true,
+      status: 200,
+      json: async () => ({ ...fallback, exclude: customExclude }),
+    });
+
+    const { manifest, source } = await loadManifest({
+      fetchImpl: mockFetch,
+      fallbackPath: FALLBACK_PATH,
+    });
+
+    assert.equal(source, 'remote');
+    assert.deepEqual(manifest.exclude, customExclude);
+  });
+
   it('falls back cleanly to data/projects.fallback.json when remote manifest returns 404', async () => {
     const mockFetch = async () => ({ ok: false, status: 404, json: async () => ({}) });
     const { manifest, source } = await loadManifest({

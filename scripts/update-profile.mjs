@@ -5,8 +5,7 @@ import { fileURLToPath } from 'node:url';
 export const GITHUB_USERNAME = 'ixboss';
 export const PORTFOLIO_URL = 'https://ixboss.vercel.app';
 export const PORTFOLIO_DISPLAY = 'ixboss.vercel.app';
-export const MANIFEST_URL =
-  'https://raw.githubusercontent.com/ixboss/boss-portfolio/master/data/projects.json';
+export const MANIFEST_URL = 'https://ixboss.vercel.app/api/projects';
 export const VERBATIM_BIO =
   'Just some nerd who loves to play with everything he sees.';
 export const STAR_BADGE_THRESHOLD = 5;
@@ -60,6 +59,15 @@ export async function loadManifest({
   fallbackPath = DEFAULT_FALLBACK_PATH,
   timeoutMs = FETCH_TIMEOUT_MS,
 } = {}) {
+  let fallbackManifest = null;
+  const readFallback = async () => {
+    if (!fallbackManifest) {
+      const raw = await fs.readFile(fallbackPath, 'utf8');
+      fallbackManifest = JSON.parse(raw);
+    }
+    return fallbackManifest;
+  };
+
   try {
     const res = await fetchJsonWithTimeout(manifestUrl, {
       fetchImpl,
@@ -69,15 +77,23 @@ export async function loadManifest({
     if (res && res.ok) {
       const data = await res.json();
       if (data && Array.isArray(data.projects)) {
-        return { manifest: data, source: 'remote' };
+        const exclude = Array.isArray(data.exclude)
+          ? data.exclude
+          : (await readFallback()).exclude;
+        return {
+          manifest: {
+            ...data,
+            exclude: Array.isArray(exclude) ? exclude : [],
+          },
+          source: 'remote',
+        };
       }
     }
   } catch {
     // Graceful fallback to local manifest below.
   }
 
-  const raw = await fs.readFile(fallbackPath, 'utf8');
-  return { manifest: JSON.parse(raw), source: 'fallback' };
+  return { manifest: await readFallback(), source: 'fallback' };
 }
 
 function isRateLimitedResponse(res) {

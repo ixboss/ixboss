@@ -63,7 +63,7 @@
 
 > <sub>Full fan, thermal, and power control for ASUS TUF &amp; ROG laptops running macOS — custom fan curves, switchable power modes, and live temperature readings, all from a native menu bar app.</sub>
 >
-> <sub>`Swift` · `IOKit` · `macOS Kernel Extension (C++)` — [Case Study ↗](https://ixboss.vercel.app/?project=asus-control-macos) · [GitHub Repo ↗](https://github.com/ixboss/asus-control-macos) · **★ 6 Stars**</sub>
+> <sub>`Swift` · `IOKit` · `macOS Kernel Extension (C++)` — [Case Study ↗](https://ixboss.vercel.app/?project=asus-control-macos) · [GitHub Repo ↗](https://github.com/ixboss/asus-control-macos) · **★ 5 Stars**</sub>
 
 <p align="center">
   <a href="https://ixboss.vercel.app/?project=bossmax">
